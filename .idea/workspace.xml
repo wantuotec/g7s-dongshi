@@ -3,27 +3,69 @@
   <component name="ChangeListManager">
     <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/about_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/article_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/guestbook_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/home_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/member_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/mood_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/photos_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/slogan_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/404/404.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/404/wait.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/about/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/article/article_detail.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/article/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/base/footer.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/base/header.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/guestbook/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/home/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/member/login.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/mood/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/photo/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/photo/photo_list.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_about.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_album.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_article_category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_article_comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_configure.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/configure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_guestbook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_module_manage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_mood.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_notice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_photos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_programs.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/programs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_role.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_slogan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/adm_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/about_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/article_category_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/article_comment_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/article_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/auth_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/configure_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/guestbook_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/module_manage_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/mood_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/notice_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/photos_album_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/photos_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/programs_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/role_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/search_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/slogan_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/models/adm/user_model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/about/edit.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/about/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article/add_article.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article/article_detail.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article/edit_article.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_category/add_category.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_category/edit_category.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_category/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_comment/audit_list.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_comment/comment_detail.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_comment/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/article_comment/return_comment.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/guestbook/admin_reply.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/guestbook/audit_list.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/guestbook/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/guestbook/message_detail.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/mood/add_mood.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/mood/edit_mood.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/mood/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/mood/mood_detail.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos/add_photos.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos/edit_photos.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos/photos_detail.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos_album/add_album.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos_album/edit_album.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/photos_album/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/slogan/edit_slogan.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/adm/slogan/index.tpl" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,19 +76,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
+            <state relative-caret-position="312">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="captcha.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/app/controllers/captcha.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192" />
           </provider>
         </entry>
       </file>
@@ -117,6 +152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/dreamma" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -142,12 +178,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550201187617</updated>
-      <workItem from="1550201188970" duration="2784000" />
+      <workItem from="1550201188970" duration="4750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2784000" />
+    <option name="totallyTimeSpent" value="4750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -252,11 +288,6 @@
     <entry file="file://$PROJECT_DIR$/home/app/models/adm/mood_model.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/user_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/about.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -271,13 +302,6 @@
     <entry file="file://$PROJECT_DIR$/home/app/models/upload_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1386" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/app/libraries/Request/Member_request.php">
@@ -318,13 +342,6 @@
     <entry file="file://$PROJECT_DIR$/home/app/controllers/home.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/programs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575" />
@@ -355,6 +372,74 @@
     <entry file="file://$PROJECT_DIR$/home/app/controllers/captcha.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-192" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_notice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/config/development/api.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/user_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/configure_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6943" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/module_manage_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/programs_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/role_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/search_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+        </state>
       </provider>
     </entry>
   </component>
