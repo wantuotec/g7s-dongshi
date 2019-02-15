@@ -6,7 +6,7 @@
  * @create : Apr. 1, 2012
  * @update : Apr. 1, 2012
  */
-class Adm_role extends CI_Controller
+class Role extends CI_Controller
 {
     /* 首页 */
     function index()
@@ -16,8 +16,8 @@ class Adm_role extends CI_Controller
         $data = array();
 
         $this->load->library('pagination');
-        $this->load->model('adm/User_model');
-        $this->load->model('adm/Role_model');
+        $this->load->model('User_model');
+        $this->load->model('Role_model');
 
         $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
         $size = isset($_GET['size']) ? intval($_GET['size']) : 20;
@@ -36,9 +36,9 @@ class Adm_role extends CI_Controller
 
         $data['pageination'] = $this->pagination->getPageBar($data['count'], $size);
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/role/index.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/role/index.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 新增角色 */
@@ -48,7 +48,7 @@ class Adm_role extends CI_Controller
 
         $data = array();
 
-        $this->load->model('adm/Role_model');
+        $this->load->model('Role_model');
 
         // 未指定act，显示页面
         if ($this->input->post('act') == 'add') {
@@ -70,9 +70,9 @@ class Adm_role extends CI_Controller
 
         $data['search_option'] = $this->Role_model->get_search_option();
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/role/add_role.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/role/add_role.tpl', $data);
+        $this->load->view('base/foot.tpl');
 
     }
 
@@ -81,7 +81,7 @@ class Adm_role extends CI_Controller
     {
         validate_priv('edit');
 
-        $this->load->model('adm/Role_model');
+        $this->load->model('Role_model');
 
         // 未指定act，显示页面
         if ($this->input->post('act') == 'edit') {
@@ -113,9 +113,9 @@ class Adm_role extends CI_Controller
         $data['search_option'] = $this->Role_model->get_search_option();
         $data['filter'] = $this->Role_model->get_by_role_id($id);
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/role/edit_role.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/role/edit_role.tpl', $data);
+        $this->load->view('base/foot.tpl');
 
     }
 
@@ -128,15 +128,15 @@ class Adm_role extends CI_Controller
         if ($id < 1) {
             show_error('非法参数');
         }
-        $this->load->model('adm/User_model');
-        $this->load->model('adm/Role_model');
+        $this->load->model('User_model');
+        $this->load->model('Role_model');
         $data = array();
         $data['list'] = $this->User_model->get_by_group_id($id);
         $data['auth_groups'] = $this->Role_model->get_all_auth_groups();
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/role/manage_user.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/role/manage_user.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 权限设置 */
@@ -149,22 +149,22 @@ class Adm_role extends CI_Controller
             show_error('非法参数');
         }
 
-        $this->load->model('adm/Auth_model');
+        $this->load->model('Auth_model');
         $data = array();
         $data['groupId'] = $id;
         $data['list'] = $this->Auth_model->get_all_programs($id);
         $data['priv_option'] = $this->Auth_model->get_priv_option();
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/role/priv.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/role/priv.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     function priv_act()
     {
         validate_priv('edit');
         $param = $this->input->post();
-        $this->load->model('adm/Auth_model');
+        $this->load->model('Auth_model');
         if($this->Auth_model->modify_sys_auths($param)){
             show_msg('编辑权限已成功', HOME_DOMAIN . 'adm_role');
         }else{
@@ -178,7 +178,7 @@ class Adm_role extends CI_Controller
         validate_priv('edit');
 
         $this->load->library('form_validation');
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
 
         $this->form_validation->set_rules('ids', '用户id', 'required');
         $this->form_validation->set_rules('groupId', '用户角色', 'required');

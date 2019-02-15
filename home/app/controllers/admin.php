@@ -15,10 +15,10 @@ class Admin extends CI_Controller
     function index()
     {
         if(!isset($_SESSION['admin']['user_id'])) {
-            header("location: " . HOME_DOMAIN . 'adm_auth/');
+            header("location: " . HOME_DOMAIN . 'auth/');
         }
 
-        $this->load->view('adm/base/index.tpl');
+        $this->load->view('base/index.tpl');
     }
 
     /* 侧边栏 */
@@ -30,7 +30,7 @@ class Admin extends CI_Controller
 
         $data = array();
         $data['userName'] = $_SESSION['admin']['userName'];
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
         $data['menu'] = $this->exchange_sort($this->User_model->get_user_menu());
 
         foreach($data['menu'] as $k=>$v)
@@ -50,9 +50,9 @@ class Admin extends CI_Controller
                 }
            }
         }
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/base/siderbar.tpl',$data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('base/siderbar.tpl',$data);
+        $this->load->view('base/foot.tpl');
     }
 
     // 交换法排序
@@ -77,12 +77,12 @@ class Admin extends CI_Controller
     /* 后台首页 */
     function info()
     {
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
         $data['menu'] = $this->exchange_sort($this->User_model->get_user_menu());
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/base/info.tpl',$data); 
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('base/info.tpl',$data); 
+        $this->load->view('base/foot.tpl');
     }
 
     /* 主体部分 */
@@ -106,8 +106,8 @@ class Admin extends CI_Controller
 
         $this->load->library('chart');
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/base/template.tpl', array('chart' => $this->chart->line($chart)));
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('base/template.tpl', array('chart' => $this->chart->line($chart)));
+        $this->load->view('base/foot.tpl');
     }
 }

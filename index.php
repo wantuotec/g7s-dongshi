@@ -17,11 +17,6 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-//判断是否是移动设备访问，提示当前只能在PC端访问
-//if (isset ($_SERVER['HTTP_X_WAP_PROFILE']) || preg_match('/Android/', $_SERVER['HTTP_USER_AGENT']) || preg_match('/\(i[^;]+;( U;)? CPU.+Mac OS X/', $_SERVER['HTTP_USER_AGENT'])) {
-//    header("Location: /pc_visit.html");
-//    exit;
-//}
 
 // 初始化应用环境
 define('ENVIRONMENT', 'development');

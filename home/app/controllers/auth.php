@@ -2,18 +2,18 @@
     exit('No direct script access allowed');
 /**
  * @author : Spike
- * @program: adm_auth.php
+ * @program: auth.php
  * @create : Mar. 23, 2012
  * @update : Mar. 23, 2012
  */
-class Adm_auth extends CI_Controller
+class Auth extends CI_Controller
 {
     function index()
     {
         // 如果已经登录
         $operate_user = get_operate_user();
         if ($operate_user && $operate_user['userName'] != 'system') {
-            url_redirect(HOME_DOMAIN . 'admin/');
+            url_redirect(HOME_DOMAIN . 'admin/index');
         }
 
         /* 生成验证码 */
@@ -23,11 +23,11 @@ class Adm_auth extends CI_Controller
             $data['username'] = $_COOKIE['admin']['username'];
         }
 
-        $data['mode'] = 1; // 后台登录模式：1表示用username登录 2表示其它登录方式
+        $data['mode'] = 1; // 后台登录模式：1.username登录 2.其它登录方式(手机号+验证码)
 
-        $this->load->view('adm/base/login_head.tpl');
-        $this->load->view('adm/base/login.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/login_head.tpl');
+        $this->load->view('base/login.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 登录验证 */
@@ -59,7 +59,7 @@ class Adm_auth extends CI_Controller
         // 进行登录
         $username = $params['username'];
         $password = $params['password'];
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
         if ($this->User_model->loginin($username, $password)) {
             // 记住用户名
             if(!isset($_COOKIE['admin']['username']) || $_COOKIE['admin']['username'] != $username) {
@@ -77,8 +77,8 @@ class Adm_auth extends CI_Controller
     /* 用户登出 */
     function loginout()
     {
-        $this->load->model('adm/User_model');
-        $this->User_model->loginout("location: " . HOME_DOMAIN . 'adm_auth/');
+        $this->load->model('User_model');
+        $this->User_model->loginout("location: " . HOME_DOMAIN . 'auth/');
     }
     
     /*返回当前用户 id */
@@ -90,16 +90,16 @@ class Adm_auth extends CI_Controller
      /*返回用户资料*/
     function get_current_user_name()
     {
-     // $this->load->model('adm/User_model');
+     // $this->load->model('User_model');
       //  return $this->User_model->get_by_user_id() $_SESSION['user_id'];
     }
     
     /* 重设密码 */
     function reset_password()
     {
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/base/reset_password.tpl');
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('base/reset_password.tpl');
+        $this->load->view('base/foot.tpl');
     }
     
      /* 重设密码 */
@@ -126,7 +126,7 @@ class Adm_auth extends CI_Controller
                 show_msg('两次输入的密码不一致', 'javascript:history.back();');
             }
 
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
             if ($this->User_model->is_weak_password($password1)) {
                 show_msg('您的密码过于简单，密码应该为8位以上的英文数字组合', 'javascript:history.back();');
             }
@@ -134,7 +134,7 @@ class Adm_auth extends CI_Controller
             if(!$this->User_model->change_pass($password, $password1)){
                 show_msg($this->User_model->get_error(), 'javascript:history.back();');
             }
-            show_msg('密码修改已成功,请重新登录, <a href="/adm_auth/loginout" target="_top">重新登录</a>');
+            show_msg('密码修改已成功,请重新登录, <a href="/auth/loginout" target="_top">重新登录</a>');
         } else {
             $message = '';
 
@@ -146,7 +146,7 @@ class Adm_auth extends CI_Controller
                 $message[] = '两次输入的密码不一致';
             }
 
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
             if ($this->User_model->is_weak_password($params['password1'])) {
                 $message[] = '您的密码过于简单，密码应该为8位以上的英文数字组合';
             }
@@ -158,7 +158,7 @@ class Adm_auth extends CI_Controller
             if(!$this->User_model->change_pass($params['password'], $params['password1'])){
                 json_exit($this->User_model->get_error());
             } else {
-                json_exit('成功', true, HOME_DOMAIN . 'adm_auth/loginout');
+                json_exit('成功', true, HOME_DOMAIN . 'auth/loginout');
             }
         }
     }
@@ -207,9 +207,9 @@ class Adm_auth extends CI_Controller
     {
         validate_priv('all');
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/base/weak_password.tpl');
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('base/weak_password.tpl');
+        $this->load->view('base/foot.tpl');
     }
 
     /**
@@ -224,7 +224,7 @@ class Adm_auth extends CI_Controller
         if ($this->input->is_post_request()) {
             $params = $this->input->post();
 
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
             $result = $this->User_model->get_sms_captcha($params);
 
             if (false === $result) {
@@ -256,7 +256,7 @@ class Adm_auth extends CI_Controller
             json_exit('请获取验证码', false, 'captcha');
         }
 
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
         if ($this->User_model->sms_login($params)) {
             // 记住用户名
             if(!isset($_COOKIE['admin']['phone_number']) || $_COOKIE['admin']['phone_number'] != $params['phone_number'])

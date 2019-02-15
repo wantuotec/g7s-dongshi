@@ -7,7 +7,7 @@
  * @copyright   Copyright(c) 2017
  * @version     $Id:$
  */
-class Adm_configure extends CI_Controller
+class Configure extends CI_Controller
 {
     /**
      * 获取列表
@@ -25,7 +25,7 @@ class Adm_configure extends CI_Controller
 
         $params['is_pages'] = true;
         $params['order_by'] = 'configure_id DESC';
-        $this->load->model('adm/Configure_model');
+        $this->load->model('Configure_model');
         $configure_result = $this->Configure_model->get_list($params);
 
         $this->load->library('pagination');
@@ -37,9 +37,9 @@ class Adm_configure extends CI_Controller
             'pagination' => $this->pagination->get_page_bar($configure_result['total'], $params['page_size']),
         );
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/configure/index.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('configure/index.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /**
@@ -56,7 +56,7 @@ class Adm_configure extends CI_Controller
         $params = $this->input->get();
         data_filter($params);
 
-        $this->load->model('adm/Configure_model');
+        $this->load->model('Configure_model');
         $configure_result = $this->Configure_model->get_by_id($params['configure_id']);
 
         $data = array(
@@ -64,9 +64,9 @@ class Adm_configure extends CI_Controller
             'configure' => $configure_result,
         );
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/configure/detail.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('configure/detail.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /**
@@ -86,7 +86,7 @@ class Adm_configure extends CI_Controller
             array_map_recursive('urlencode', $params);
             data_filter($params);
 
-            $this->load->model('adm/Configure_model');
+            $this->load->model('Configure_model');
             $result = $this->Configure_model->add_configure($params);
 
             if (false === $result) {
@@ -98,16 +98,16 @@ class Adm_configure extends CI_Controller
             $params = $this->input->get();
             data_filter($params);
 
-            $this->load->model('adm/Configure_model');
+            $this->load->model('Configure_model');
             $configure_result = $this->Configure_model->get_by_id($params['configure_id']);
 
             $data = array(
                 'configure' => $configure_result,
             );
 
-            $this->load->view('adm/base/head.tpl');
-            $this->load->view('adm/configure/add.tpl', $data);
-            $this->load->view('adm/base/foot.tpl');
+            $this->load->view('base/head.tpl');
+            $this->load->view('configure/add.tpl', $data);
+            $this->load->view('base/foot.tpl');
         }
     }
 
@@ -128,7 +128,7 @@ class Adm_configure extends CI_Controller
             array_map_recursive('urlencode', $params);
             data_filter($params);
 
-            $this->load->model('adm/Configure_model');
+            $this->load->model('Configure_model');
             $result = $this->Configure_model->edit_configure($params);
 
             if (false === $result) {
@@ -140,7 +140,7 @@ class Adm_configure extends CI_Controller
             $params = $this->input->get();
             data_filter($params);
 
-            $this->load->model('adm/Configure_model');
+            $this->load->model('Configure_model');
             $configure_result = $this->Configure_model->get_by_id($params['configure_id']);
 
             $data = array(
@@ -148,9 +148,9 @@ class Adm_configure extends CI_Controller
                 'configure' => $configure_result,
             );
 
-            $this->load->view('adm/base/head.tpl');
-            $this->load->view('adm/configure/edit.tpl', $data);
-            $this->load->view('adm/base/foot.tpl');
+            $this->load->view('base/head.tpl');
+            $this->load->view('configure/edit.tpl', $data);
+            $this->load->view('base/foot.tpl');
         }
     }
 

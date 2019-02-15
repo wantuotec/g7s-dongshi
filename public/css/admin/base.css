@@ -123,8 +123,8 @@ p {
 .submit {
     /*background: url("/public/images/admin/bg-button-green.gif") repeat-x scroll left top #459300 !important;*/
     /*border: 1px solid #459300 !important;*/
-    background-color: #63B8FF;
-    border: 1px solid #63B8FF !important;
+    background-color: #5F9EA0;
+    border: 1px solid #5F9EA0 !important;
     color: #FFFFFF !important;
     cursor: pointer;
     display: inline-block;
@@ -133,8 +133,8 @@ p {
     overflow:visible;
 }
 .submit:hover {
-    background-color: #5CACEE;
-    border: 1px solid #5CACEE !important;
+    background-color: #528B8B;
+    border: 1px solid #528B8B !important;
 }
 .button {
     background: url("/public/images/admin/bg-button-gray.gif") repeat-x scroll left top #E9E9E9 !important;
@@ -209,7 +209,8 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     color: #fff;
 }
 #sidebar {
-    background: url("/public/images/admin/bg-body.gif") repeat-y scroll left top #F0F0F0;
+    /*background: url("/public/images/admin/bg-body.gif") repeat-y scroll left top #F0F0F0;*/
+    background-color: #22262e;
     color: #888888;
     font-size: 12px;
     left: 0;
@@ -257,7 +258,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     display: block;
 }
 #sidebar #main-nav li a.nav-top-item {
-    background: url("/public/images/admin/bg-menu-item-blue.gif") no-repeat scroll right center transparent;
+    background: url("/public/images/admin/bg-menu-item-blue.png") no-repeat scroll right center transparent;
     color: #FFFFFF;
     cursor: pointer;
     display: block;
@@ -405,7 +406,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     height: 40px;
     margin-top: 1px;
     border-bottom: 1px solid #CCCCCC;
-    background-color: #4A4A4A;
+    background-color: #22262e;
     color: #FFF;
 }
 .content-box-header h3 {
@@ -713,7 +714,7 @@ label.error {
 }
 
 #login-wrapper {
-    background: url("/public/images/admin/login-bg.jpg") no-repeat scroll 0 0;
+    background: url("/public/images/admin/login-bg-dh.jpg") no-repeat scroll 0 0;
     background-size: 100% 100%;
     color: #FFFFFF;
     height: 100%;
@@ -736,7 +737,7 @@ label.error {
     padding: 0 25% 0 18%;
 }
 #login-wrapper #login-content label {
-    color: #FFFFFF;
+    color: #474645;
     float: left;
     font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;

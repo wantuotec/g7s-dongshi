@@ -38,12 +38,8 @@
 |
 */
 
-$route['default_controller'] = 'home';
+$route['default_controller'] = 'admin/index';
 $route['404_override']       = '';
-
-/* 后台路由设置 (这里无法开启，不然框架重复加载，导致无法显示) */
-// $route['admin']      = 'admin';
-// $route['admin/(.*)'] = 'admin';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

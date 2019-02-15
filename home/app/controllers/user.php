@@ -8,7 +8,7 @@
  * @update : Mar. 31, 2012
  */
 
-class Adm_user extends CI_Controller
+class User extends CI_Controller
 {
     /* 首页 */
     function index()
@@ -18,7 +18,7 @@ class Adm_user extends CI_Controller
         $data = array();
 
         $this->load->library('pagination');
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
 
         $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
         $size = isset($_GET['size']) ? intval($_GET['size']) : 20;
@@ -39,9 +39,9 @@ class Adm_user extends CI_Controller
 
         $data['pageination'] = $this->pagination->getPageBar($data['count'], $size);
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/user/index.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/user/index.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 新增用户 */
@@ -49,7 +49,7 @@ class Adm_user extends CI_Controller
     {
         validate_priv('addnew');
         
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
 
         $this->load->library('email');
         if ($this->input->post('act') == 'add') {
@@ -82,9 +82,9 @@ class Adm_user extends CI_Controller
 
         $data['search_option']['auth'] = $this->User_model->get_all_auth_groups();
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/user/add_user.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/user/add_user.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 编辑用户 */
@@ -99,7 +99,7 @@ class Adm_user extends CI_Controller
 
         $data = array();
 
-        $this->load->model('adm/User_model');
+        $this->load->model('User_model');
 
         if ($this->input->post('act') == 'edit') {
 
@@ -150,9 +150,9 @@ class Adm_user extends CI_Controller
 
         $data['search_option']['auth'] = $this->User_model->get_all_auth_groups();
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/user/edit_user.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/user/edit_user.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /* 修改密码 */
@@ -163,7 +163,7 @@ class Adm_user extends CI_Controller
         if ($this->input->is_post_request()) {
             $params = $this->input->post();
 
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
             $result = $this->User_model->update_password($params['id'], $params);
 
             if (false === $result) {
@@ -174,12 +174,12 @@ class Adm_user extends CI_Controller
         } else {
             $params = $this->input->get();
 
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
             $data['filter'] = $this->User_model->get_by_user_id($params['id']);
 
-            $this->load->view('adm/base/head.tpl');
-            $this->load->view('adm/settings/user/edit_pass.tpl', $data);
-            $this->load->view('adm/base/foot.tpl');
+            $this->load->view('base/head.tpl');
+            $this->load->view('settings/user/edit_pass.tpl', $data);
+            $this->load->view('base/foot.tpl');
         }
     }
 
@@ -193,8 +193,8 @@ class Adm_user extends CI_Controller
             show_error('非法参数', "javascript:history.back();");
         }
         
-        $this->load->model('adm/Auth_model');
-        $this->load->model('adm/User_model');
+        $this->load->model('Auth_model');
+        $this->load->model('User_model');
         $user = $this->User_model->get_by_user_id($id);
 
         $data = array();
@@ -202,9 +202,9 @@ class Adm_user extends CI_Controller
         $data['list'] = $this->Auth_model->get_all_programs($user['groupId']);
         $data['priv_option'] = $this->Auth_model->get_priv_option();
         
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/user/priv.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/user/priv.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
     
     /* 修改用户密码 */
@@ -215,7 +215,7 @@ class Adm_user extends CI_Controller
         $output['status'] = 0;
         $id = intval($this->input->get('id'));
         if ($id > 0) {
-            $this->load->model('adm/User_model');
+            $this->load->model('User_model');
 
             // 生成初始密码
             $pass = $this->User_model->gen_pass();

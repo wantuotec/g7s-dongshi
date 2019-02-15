@@ -9,7 +9,7 @@
  * @copyright   Copyright(c) 2017
  * @version     $Id:$
  */
-class Adm_programs extends CI_Controller
+class Programs extends CI_Controller
 {
     /**
      * 菜单管理首页
@@ -21,13 +21,13 @@ class Adm_programs extends CI_Controller
     public function index()
     {
         $data = array();
-        $this->load->model('adm/Programs_model');
+        $this->load->model('Programs_model');
         // 获取所有的菜单信息
         $data = array('list'=> $this->Programs_model->get_list());
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/programs/index.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/programs/index.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
 
     /**
@@ -49,7 +49,7 @@ class Adm_programs extends CI_Controller
         $data                = array();
         // 返回地址
         $data['return_path'] =  HOME_DOMAIN . 'programs/';
-        $this->load->model('adm/Programs_model');
+        $this->load->model('Programs_model');
         if ($this->input->post('act') == 'edit') {
             $data['filter'] = $this->input->post();
             unset($data['filter']['id']);
@@ -66,9 +66,9 @@ class Adm_programs extends CI_Controller
         // 获取状态信息
         $all_status       = $this->Programs_model->get_all_status();
         $data['displays'] = $all_status['displays'];
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/programs/edit.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/programs/edit.tpl', $data);
+        $this->load->view('base/foot.tpl');
      }
 
      /**
@@ -86,7 +86,7 @@ class Adm_programs extends CI_Controller
         if ($id < 1) {
             show_error('非法的参数');
         }
-        $this->load->model('adm/Programs_model');
+        $this->load->model('Programs_model');
         $id         = intval($this->input->post('id'));
         $is_display = intval($this->input->post('is_display'));
         if ($id && $is_display >= 0) {
@@ -115,7 +115,7 @@ class Adm_programs extends CI_Controller
         $systemId   = intval($this->input->get('systemId'));
         $sysGroupId = intval($this->input->get('sysGroupId'));
         $params     = $this->input->get();
-        $this->load->model('adm/Programs_model');
+        $this->load->model('Programs_model');
         if ($this->input->post('act') == 'add') {
             $data['programs'] = $this->input->post();
             unset($data['programs']['act']);
@@ -134,9 +134,9 @@ class Adm_programs extends CI_Controller
         $data['systemId']   = $systemId;
         $data['sysGroupId'] = $sysGroupId;
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/programs/add_second.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/programs/add_second.tpl', $data);
+        $this->load->view('base/foot.tpl');
     }
     /**
      * 添加一级菜单
@@ -149,7 +149,7 @@ class Adm_programs extends CI_Controller
      {
         validate_priv('addnew');
         $data               = array();
-        $this->load->model('adm/Programs_model');
+        $this->load->model('Programs_model');
         if ($this->input->post('act') == 'add') {
             $data['programs'] = $this->input->post();
             unset($data['programs']['act']);
@@ -163,9 +163,9 @@ class Adm_programs extends CI_Controller
         $all_status         = $this->Programs_model->get_all_status();
         $data['displays']   = $all_status['displays'];
 
-        $this->load->view('adm/base/head.tpl');
-        $this->load->view('adm/settings/programs/add_first.tpl', $data);
-        $this->load->view('adm/base/foot.tpl');
+        $this->load->view('base/head.tpl');
+        $this->load->view('settings/programs/add_first.tpl', $data);
+        $this->load->view('base/foot.tpl');
      }
 
      /**
@@ -180,7 +180,7 @@ class Adm_programs extends CI_Controller
              json_exit('服务器未收到有效的数据！', false);
          }
 
-         $this->load->model('adm/Programs_model');
+         $this->load->model('Programs_model');
          $result = $this->Programs_model->do_save($menu);
 
          if($result === false) {
