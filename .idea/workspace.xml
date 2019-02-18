@@ -3,101 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/config/development/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/development/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/config/development/rwdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/development/rwdb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/configure.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/configure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/programs.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/programs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/hooks/page_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/hooks/page_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/foot.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/head.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/info.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/login.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/login_head.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/reset_password.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/siderbar.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/template.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/template_map.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/base/user_branch.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/configure/add.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/configure/detail.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/configure/edit.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/configure/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/module_manage/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/programs/add_first.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/programs/add_second.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/programs/edit.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/programs/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/role/add_role.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/role/edit_role.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/role/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/role/manage_user.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/role/priv.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/add_user.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/edit_branch.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/edit_pass.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/edit_user.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/adm/settings/user/priv.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/admin/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/add_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/add_square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/browse_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/centre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/date_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/dreamma_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/dreamma_logo_pc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/header/header_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/hello_like.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home_banner_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/horse.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/is_like_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/like_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/login_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mess_03.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/message_grey_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/message_red_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/more01.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/new.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/new01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/origin_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pc_visit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/photo_64px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/qq_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/r_line.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/r_title_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/recommend01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/return.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/return_top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/send_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/smiling_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/snail.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/speaker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/speaker_x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/visit_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/wait02.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/wall6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/wechat_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/wechat_code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admin/logo_bkd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admin/logo_bkd2.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/app/controllers/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="99" column="43" lean-forward="true" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+            <state relative-caret-position="2079">
+              <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -122,17 +30,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-              <folding>
-                <element signature="e#646#652#0#HTML" expanded="true" />
-                <element signature="e#652#658#0#HTML" expanded="true" />
-                <element signature="e#658#664#0#HTML" expanded="true" />
-                <element signature="e#664#670#0#HTML" expanded="true" />
-                <element signature="e#1042#1048#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#p#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#p#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +37,8 @@
       <file leaf-file-name="user_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/app/models/user_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="478" column="37" lean-forward="true" selection-start-line="478" selection-start-column="37" selection-end-line="478" selection-end-column="37" />
+            <state relative-caret-position="10038">
+              <caret line="478" column="37" selection-start-line="478" selection-start-column="37" selection-end-line="478" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -150,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -167,8 +64,8 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/admin/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="745" column="16" lean-forward="true" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
+            <state relative-caret-position="567">
+              <caret line="739" column="19" selection-start-line="739" selection-start-column="19" selection-end-line="739" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -177,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/home/app/views/base/siderbar.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -321,37 +218,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550201187617</updated>
-      <workItem from="1550201188970" duration="17413000" />
+      <workItem from="1550201188970" duration="17692000" />
+      <workItem from="1550455636843" duration="2222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17413000" />
+    <option name="totallyTimeSpent" value="19914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="调试" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="调试" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,62 +259,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_mood.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/captcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_notice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_mood.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/captcha.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_notice.php" />
     <entry file="file://$PROJECT_DIR$/home/app/config/development/api.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/user_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/configure_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6943" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/module_manage_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/programs_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/role_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/adm/search_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/adm_user.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/user_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/auth_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/configure_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/module_manage_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/programs_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/role_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/models/adm/search_model.php" />
     <entry file="file://$PROJECT_DIR$/home/app/daos/configure_dao.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -520,20 +376,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/module_manage_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-672">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/module_manage/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/module_manage_model.php" />
+    <entry file="file://$PROJECT_DIR$/home/app/views/module_manage/index.tpl" />
     <entry file="file://$PROJECT_DIR$/home/app/hooks/page_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -582,24 +426,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/base/template.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-126" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/app/models/user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="478" column="37" lean-forward="true" selection-start-line="478" selection-start-column="37" selection-end-line="478" selection-end-column="37" />
+        <state relative-caret-position="10038">
+          <caret line="478" column="37" selection-start-line="478" selection-start-column="37" selection-end-line="478" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="99" column="43" lean-forward="true" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+        <state relative-caret-position="2079">
+          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -618,7 +458,7 @@
     <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -632,7 +472,7 @@
     <entry file="file://$PROJECT_DIR$/home/app/views/base/siderbar.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -654,24 +494,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#646#652#0#HTML" expanded="true" />
-            <element signature="e#652#658#0#HTML" expanded="true" />
-            <element signature="e#658#664#0#HTML" expanded="true" />
-            <element signature="e#664#670#0#HTML" expanded="true" />
-            <element signature="e#1042#1048#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#p#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#p#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/admin/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="745" column="16" lean-forward="true" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
+        <state relative-caret-position="567">
+          <caret line="739" column="19" selection-start-line="739" selection-start-column="19" selection-end-line="739" selection-end-column="19" />
         </state>
       </provider>
     </entry>

@@ -714,11 +714,11 @@ label.error {
 }
 
 #login-wrapper {
-    background: url("/public/images/admin/login-bg-dh.jpg") no-repeat scroll 0 0;
+    background: url("/public/images/admin/login-bg-box2.jpg") no-repeat scroll 0 0;
     background-size: 100% 100%;
     color: #FFFFFF;
     height: 100%;
-    padding: 10% 0 0 0;
+    padding: 13% 0 0 0;
 }
 #login-wrapper #login-top {
     padding: 30px 0;
@@ -726,7 +726,7 @@ label.error {
     width: 100%;
 }
 #login-wrapper #login-content {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.4);
     margin: 0 auto;
     padding: 10px 20px;
     text-align: center;
