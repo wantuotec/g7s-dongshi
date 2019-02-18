@@ -12,7 +12,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN ?>adm_role/editRole" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
+                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN ?>role/editRole" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
                             <input type="hidden" name="id" value="<?php echo $filter['id'] ?>"/>
                             <input type="hidden" name="act" value="edit"/>
                             <table>

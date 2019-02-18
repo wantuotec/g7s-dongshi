@@ -11,7 +11,7 @@
                 </div><!-- End .content-box-header -->
 
                 <div class="content-box-content">
-                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN ?>adm_role/priv_act" class="search-content">
+                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN ?>role/priv_act" class="search-content">
                             <input type="hidden" name="groupId" value="<?php echo $groupId ?>"/>
                             <table class="line">
                             <thead>

@@ -1,11 +1,3 @@
-<style type="text/css">
-<!--
-    html {
-    background: url("/public/images/admin/bg-radial-gradient.gif") repeat-y scroll -300px top #F0F0F0;
-}
--->
-</style>
-
 <div id="sidebar">
     <div id="fold-frame">
         <a class="fold" href="#" title="折叠导航栏">≡</a>
@@ -13,8 +5,9 @@
     </div>
 
     <div id="sidebar-wrapper" > <!-- Sidebar with logo and menu -->
-        <h1 id="sidebar-title" class="png">
-            <a target="_parent"  href="<?php echo HOME_DOMAIN ?>admin/"><img class="pngfix" src="<?php echo HOME_DOMAIN ?>public/images/admin/logo_bkd_title_blue.png"/></a>
+        <h1 id="sidebar-title" class="png" style="font-weight: normal;">
+            东航食品管控系统
+            <!--<a target="_parent"  href="<?php echo HOME_DOMAIN ?>admin/"><img class="pngfix" src="<?php echo HOME_DOMAIN ?>public/images/admin/logo_bkd_title_blue.png"/></a>-->
         </h1>
 
         <!-- Sidebar Profile links -->

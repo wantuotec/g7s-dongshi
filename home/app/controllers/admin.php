@@ -25,7 +25,7 @@ class Admin extends CI_Controller
     function siderbar()
     {
         if(!isset($_SESSION['admin']['user_id'])) {
-            header("location: " . HOME_DOMAIN . 'adm_auth/');
+            header("location: " . HOME_DOMAIN . 'auth/');
         }
 
         $data = array();

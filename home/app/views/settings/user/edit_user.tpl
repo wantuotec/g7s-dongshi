@@ -9,7 +9,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="form" method="post" action="<?php echo HOME_DOMAIN ?>adm_user/editUser" class="search-content" enctype="multipart/form-data" >
+                        <form name="form" method="post" action="<?php echo HOME_DOMAIN ?>user/editUser" class="search-content" enctype="multipart/form-data" >
                             <input type="hidden" name="act" value="edit" />
                             <input type="hidden" name="id" value="<?php echo $filter['id'] ?>" />
                             <table>

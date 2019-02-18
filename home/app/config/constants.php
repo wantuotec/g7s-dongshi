@@ -13,12 +13,11 @@ define('IMG_DOMAIN'  , 'http://www.' . DOMAIN . '/public/upload/images/');
 | Website constants
 |--------------------------------------------------------------------------
 */
-define('COMPANY'    , '梦马空间个人站');
-define('TITLE'      , '梦马空间');
-define('ADM_TITLE'  , '梦马空间后台系统');
-define('SLOGAN'     , '以梦为马，诗酒乘年华');
-define('KEYWORDS'   , '个人空间，博客，摄影，90后，分享');
-define('DESCRIPTION', '这里是小编的个人空间，希望分享一些日常的生活学习点滴，共同成长');
+define('COMPANY'    , '上海东方航空食品有限公司');
+define('TITLE'      , '东航食品管控系统');
+define('SLOGAN'     , '');
+define('KEYWORDS'   , '');
+define('DESCRIPTION', '');
 define('APP_VERSION', '1.0.0');
 define('JS_VERSION' , '20170101');
 define('CSS_VERSION', '20170101');

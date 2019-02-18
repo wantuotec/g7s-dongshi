@@ -3,7 +3,7 @@
 /**
  * @author      madesheng
  * @date        2017-02-26
- * @category    adm_configure
+ * @category    configure
  * @copyright   Copyright(c) 2017
  * @version     $Id:$
  */

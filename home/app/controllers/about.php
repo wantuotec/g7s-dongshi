@@ -3,11 +3,11 @@
 /**
  * @author      madesheng
  * @date        2017-02-26
- * @category    adm_about
+ * @category    about
  * @copyright   Copyright(c) 2017
  * @version     $Id:$
  */
-class Adm_about extends CI_Controller
+class about extends CI_Controller
 {
     /**
      * 网站信息展示

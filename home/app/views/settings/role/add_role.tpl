@@ -12,7 +12,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN; ?>adm_role/addRole" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
+                        <form name="search_form" method="post" action="<?php echo HOME_DOMAIN; ?>role/addRole" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
                             <input type="hidden" name="act" value="add"/>
                             <table>
                             <colgroup>

@@ -9,7 +9,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="commit" method="post" action="<?php echo HOME_DOMAIN ?>adm_role/moveUser" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
+                        <form name="commit" method="post" action="<?php echo HOME_DOMAIN ?>role/moveUser" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
                             <table>
                            	<colgroup>
                          		<col width="100px"/>

@@ -148,7 +148,7 @@ function save_all()
         return false;
     }
 
-    $.post('<?php echo HOME_DOMAIN ?>adm_programs/do_save', $('form').serialize(), function(ret) {
+    $.post('<?php echo HOME_DOMAIN ?>programs/do_save', $('form').serialize(), function(ret) {
          if(ret.success == false) {
              $.BKD.msg(ret.message);
              return false;
@@ -207,7 +207,7 @@ function save_all()
                         </td>
 
                         <td>
-                            <input type="hidden" value="<?php echo HOME_DOMAIN.'adm_programs/edit_program/?id='.$item['id'] ?>">
+                            <input type="hidden" value="<?php echo HOME_DOMAIN.'programs/edit_program/?id='.$item['id'] ?>">
                             <a href="javascript:;" onclick="add_column($(this), <?php echo $item['sysGroupId']; ?>)"><img src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/16/add.png" alt="Add"/>添加二级菜单</a>
 
                             <a style="cursor:pointer;" href="javascript:;" onclick="play_show($(this), <?php echo $item['sysGroupId']; ?>);">

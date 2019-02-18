@@ -69,7 +69,7 @@ function eidtPass() {
     }
 
     $('input[name=editPassword]').attr('disabled', true).removeClass('submit').val('正在修改密码...');
-    $.post('<?php echo HOME_DOMAIN; ?>adm_user/editPass', $('form').serialize(), function (response) {
+    $.post('<?php echo HOME_DOMAIN; ?>user/editPass', $('form').serialize(), function (response) {
         if (true === response.success) {
             $.BKD.confirm('密码修改成功！');
             window.parent.$.BKD.close_current();

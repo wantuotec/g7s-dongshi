@@ -42,7 +42,7 @@ class Role_model extends CI_Model
         if (count($params) < 1) {
             $this->_error = '分页查询参数不能为空';
         }
-        $this->load->model('adm/Search_model');
+        $this->load->model('Search_model');
 
         return $this->Search_model->browse('Auth_groups_dao', $params, $offset, $size, 0);
     }
@@ -150,7 +150,7 @@ class Role_model extends CI_Model
         $warehouse_where = array(
             'fields' => 'warehouse_id,warehouse_name,code,contact',
         );
-        $this->load->model('adm/Warehouse_model');
+        $this->load->model('Warehouse_model');
         $warehouse = $this->Warehouse_model->get_warehouse_list($warehouse_where);
 
         return array(
@@ -196,7 +196,7 @@ class Role_model extends CI_Model
                     'warehouse_id' => $warehouse_ids,
                 ),
             );
-            $this->load->model('adm/Warehouse_model');
+            $this->load->model('Warehouse_model');
             $warehouse = $this->Warehouse_model->get_warehouse_list($warehouse_where);
             if ($warehouse['total'] != count($warehouse_ids)) {
                 $this->set_error('选择的仓库中存在异常！');

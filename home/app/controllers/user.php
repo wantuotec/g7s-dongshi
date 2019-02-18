@@ -68,7 +68,7 @@ class User extends CI_Controller
             if ($this->form_validation->run() == false)
                 show_error(validation_errors());
             if ($this->User_model->create_user($data)) {
-                show_msg('新增用户成功', HOME_DOMAIN . 'adm_user/');
+                show_msg('新增用户成功', HOME_DOMAIN . 'user/');
             } else {
                 show_error($this->User_model->get_error(), 'javascript:history.back();');
             }

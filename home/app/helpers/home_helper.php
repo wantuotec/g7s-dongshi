@@ -578,7 +578,7 @@ if (!function_exists('css_tag')) {
             $data = array_merge($data,$append_data);
         }
         foreach ($data as &$item) {
-            $output .= '<link href="' . HOME_DOMAIN . 'public/css/' . $item . '?v=' . CSS_VERSION . '" rel="stylesheet" type="text/css" />';
+            $output .= '<link href="' . HOME_DOMAIN . 'css/' . $item . '?v=' . CSS_VERSION . '" rel="stylesheet" type="text/css" />';
         }
         return $output;
     }

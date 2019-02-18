@@ -18,7 +18,7 @@ function edit() {
     }
 
     $('input[name=edit_submit]').attr('disabled', true).removeClass('submit').val('正在编辑中...');
-    $.post('<?php echo HOME_DOMAIN; ?>adm_configure/edit', $('form').serialize(), function (response) {
+    $.post('<?php echo HOME_DOMAIN; ?>configure/edit', $('form').serialize(), function (response) {
         if (true === response.success) {
             $.BKD.msg('编辑成功!');
             javascript:history.back(-1);

@@ -23,12 +23,12 @@ function add() {
     }
 
     $('input[name=add_submit]').attr('disabled', true).removeClass('submit').val('正在添加中...');
-    $.post('<?php echo HOME_DOMAIN; ?>adm_configure/add', $('form').serialize(), function (response) {
+    $.post('<?php echo HOME_DOMAIN; ?>configure/add', $('form').serialize(), function (response) {
         if (true === response.success) {
             if ($.BKD.confirm('添加成功！是否继续添加？')) {
-                $.BKD.redirect('<?php echo HOME_DOMAIN; ?>adm_configure/add');
+                $.BKD.redirect('<?php echo HOME_DOMAIN; ?>configure/add');
             } else {
-                $.BKD.redirect('<?php echo HOME_DOMAIN; ?>adm_configure');
+                $.BKD.redirect('<?php echo HOME_DOMAIN; ?>configure');
             }
         } else {
             $.BKD.msg(response.message);

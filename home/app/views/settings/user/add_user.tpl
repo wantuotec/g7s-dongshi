@@ -9,7 +9,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="form" method="post" action="<?php echo HOME_DOMAIN ?>adm_user/addUser" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
+                        <form name="form" method="post" action="<?php echo HOME_DOMAIN ?>user/addUser" class="search-content" onSubmit="return check_submit()" enctype="multipart/form-data">
                             <input type="hidden" name="act" value="add" />
                             <table>
                                 <colgroup>

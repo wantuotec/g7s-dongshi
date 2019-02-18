@@ -5,7 +5,7 @@
  *
  * @author      madesheng
  * @date        2017-02-27
- * @category    adm_programs
+ * @category    programs
  * @copyright   Copyright(c) 2017
  * @version     $Id:$
  */
@@ -184,7 +184,7 @@ class Programs extends CI_Controller
          $result = $this->Programs_model->do_save($menu);
 
          if($result === false) {
-             json_exit($this->Adm_Programs_model->get_error(), false);
+             json_exit($this->Programs_model->get_error(), false);
          } else {
              json_exit('操作成功！', true);
          }

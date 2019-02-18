@@ -29,8 +29,7 @@ class Role extends CI_Controller
 
         $data['search_option'] = $this->Role_model->get_search_option();
 
-        list($data['list'], $data['count']) = $this->Role_model->browse($data['filter'],
-            $offset, $size);
+        list($data['list'], $data['count']) = $this->Role_model->browse($data['filter'], $offset, $size);
 
         $this->User_model->warp_user_count_by_group($data['list']);
 
@@ -62,7 +61,7 @@ class Role extends CI_Controller
                 show_error(validation_errors());
 
             if ($this->Role_model->create_role($data['filter'])) {
-                show_msg('新建角色成功', HOME_DOMAIN . 'adm_role/');
+                show_msg('新建角色成功', HOME_DOMAIN . 'role/');
             } else {
                 show_error($this->get_error());
             }
@@ -98,7 +97,7 @@ class Role extends CI_Controller
             $filter['status'] = $this->input->post('status');
 
             if ($this->Role_model->modify_role($filter, $id)) {
-                show_msg('编辑角色成功', HOME_DOMAIN . 'adm_role/');
+                show_msg('编辑角色成功', HOME_DOMAIN . 'role/');
             } else {
                 show_error($this->get_error());
             }
@@ -166,7 +165,7 @@ class Role extends CI_Controller
         $param = $this->input->post();
         $this->load->model('Auth_model');
         if($this->Auth_model->modify_sys_auths($param)){
-            show_msg('编辑权限已成功', HOME_DOMAIN . 'adm_role');
+            show_msg('编辑权限已成功', HOME_DOMAIN . 'role');
         }else{
             show_error($this->Auth_model->get_error());
         }
@@ -191,7 +190,7 @@ class Role extends CI_Controller
         $filter['groupId'] = $this->input->post('groupId');
 
         if ($this->User_model->modify_users($filter, $ids)) {
-            show_msg('成员移动成功', HOME_DOMAIN . 'adm_role/');
+            show_msg('成员移动成功', HOME_DOMAIN . 'role/');
         } else {
             show_error($this->get_error());
         }

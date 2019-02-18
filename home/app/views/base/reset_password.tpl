@@ -9,7 +9,7 @@
                 </div><!-- End .content-box-header -->
                 
                 <div class="content-box-content">
-                        <form name="property_add" method="post" action="/adm_auth/do_reset_password" class="search-content">
+                        <form name="property_add" method="post" action="/auth/do_reset_password" class="search-content">
                             <table>
                                 <colgroup>
                                     <col width="70px"/>
