@@ -17,6 +17,15 @@
 
     $.BKD = {
         /**
+         * 获取当前域名
+         * @params  string  selector    选择器
+         * @return  json object
+         */
+        getCurrentDomain : function () {
+            return window.location.protocol + '//' + window.location.host + window.location.port
+        },
+
+        /**
          * 滑动菜单
          */
         slide: function(id){
@@ -128,6 +137,16 @@
                     return false;
                 })
             }
+        },
+
+        /**
+         * drop menu
+         */
+        dropMenu: function () {
+            $('.right-header .menu-trigger').on('click', function() {
+                $(this).next('.dropdown').toggleClass('hide');
+                return false;
+            });
         },
 
         /**
@@ -491,6 +510,72 @@
         },
 
         /**
+         * js 操作 cookie
+         *
+         * @params  string  key     cookie名称
+         * @params  string  value   cookie的值
+         * @params  string  options 设置项 [expires:单位分钟]
+         *
+         * @return  bool
+         */
+        cookie : function(key, value, options) {
+            if (arguments.length > 1 && (!/Object/.test(Object.prototype.toString.call(value)) || value === null || value === undefined)) {
+                options = $.extend({}, options);
+
+                if (value === null || value === undefined) {
+                    options.expires = -1;
+                }
+
+                // 过期时间为分钟
+                if (typeof options.expires === 'number') {
+                    var exdate = new Date();
+                    var Minutes = (parseInt(options.expires) * 60 * 1000);
+                    exdate.setTime(exdate.getTime() + Minutes);
+                }
+
+                value = String(value);
+
+                return (document.cookie = [
+                    encodeURIComponent(key), '=', options.raw ? value : encodeURIComponent(value),
+                    options.expires ? '; expires=' + exdate.toGMTString() : '', // use expires attribute, max-age is not supported by IE
+                    options.path    ? '; path=' + options.path : '',
+                    options.domain  ? '; domain=' + options.domain : '',
+                    options.secure  ? '; secure' : ''
+                ].join(''));
+            }
+
+            // key and possibly options given, get cookie...
+            options = value || {};
+            var decode = options.raw ? function(s) { return s; } : decodeURIComponent;
+
+            var pairs = document.cookie.split('; ');
+            for (var i = 0, pair; pair = pairs[i] && pairs[i].split('='); i++) {
+                if (decode(pair[0]) === key) return decode(pair[1] || ''); // IE saves cookies with empty string as "c; ", e.g. without "=" as opposed to EOMB, thus pair[1] may be undefined
+            }
+            return null;
+        },
+
+        /**
+         * 获取 COOKIE
+         *
+         * @params  string  selector    选择器
+         *
+         * @return  json object
+         */
+        getCookie : function (cookieName) {
+            if(document.cookie.length > 0){
+                c_start=document.cookie.indexOf(cookieName + "=")
+                if(c_start != -1){
+                    c_start = c_start + cookieName.length+1 ;
+                    c_end = document.cookie.indexOf(";",c_start);
+                    if(c_end==-1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start,c_end));
+                }
+            }
+            return '';
+        },
+
+        /**
          * 还可以输入多少字
          *
          * @params    object    obj_field   form对象
@@ -805,4 +890,6 @@ $(document).ready(function () {
     });
 
     $.BKD.check_all();
+
+    $.BKD.dropMenu();
 });
