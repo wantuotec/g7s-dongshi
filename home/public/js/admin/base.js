@@ -45,16 +45,19 @@
 
                 // 打开关闭二级菜单
                 $obj.find('>.nav-top-item').click(function(){
-                        var $targetObj = $(this).next('ul');
-                        if($targetObj.css('display')=='none'){
-                            $targetObj.slideDown('fast');
-                            $.BKD.syncHeight();
-                            return false;
-                        }else{
-                            $targetObj.slideUp('fast');
-                            $.BKD.syncHeight();
-                            return false;
-                        }
+                    // 先关闭所有打开的菜单栏目
+                    $obj.find('>ul').slideUp('fast');
+
+                    var $targetObj = $(this).next('ul');
+                    if($targetObj.css('display')=='none'){
+                        $targetObj.slideDown('fast');
+                        $.BKD.syncHeight();
+                        return false;
+                    }else{
+                        $targetObj.slideUp('fast');
+                        $.BKD.syncHeight();
+                        return false;
+                    }
                     }
                );
             }

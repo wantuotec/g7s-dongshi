@@ -66,7 +66,7 @@ class User extends CI_Controller
             $data['pass'] = $this->User_model->pass_encode($data['pass']);
 
             if ($this->form_validation->run() == false)
-                show_error(validation_errors());
+                show_msg(validation_errors(), "javascript:history.back();");
             if ($this->User_model->create_user($data)) {
                 show_msg('新增用户成功', HOME_DOMAIN . 'user/');
             } else {
@@ -94,7 +94,7 @@ class User extends CI_Controller
 
         $user_id = $this->input->is_post_request() ? intval($this->input->post('id')) : intval($this->input->get('id'));
         if ($user_id < 1) {
-            show_error('非法的参数');
+            show_msg('非法的参数', "javascript:history.back();");
         }
 
         $data = array();
@@ -118,7 +118,7 @@ class User extends CI_Controller
             $this->form_validation->set_rules('email', 'Email', 'valid_email|required');
 
             if ($this->form_validation->run() == false)
-                show_error(validation_errors(), "javascript:history.back();");
+                show_msg(validation_errors(), "javascript:history.back();");
 
             // 校验一下手机号
             $this->load->helper('validate');
@@ -140,7 +140,7 @@ class User extends CI_Controller
             if ($this->User_model->modify_user($data['filter'], $user_id)) {
                 show_msg('用户修改已成功', "javascript:history.back();");
             } else {
-                show_error($this->User_model->get_error(), 'javascript:history.back();');
+                show_msg($this->User_model->get_error(), "javascript:history.back();");
             }
         }
 
@@ -190,7 +190,7 @@ class User extends CI_Controller
         
         $id = intval($this->input->get('id'));
         if ($id < 1) {
-            show_error('非法参数', "javascript:history.back();");
+            show_msg('非法参数', "javascript:history.back();");
         }
         
         $this->load->model('Auth_model');

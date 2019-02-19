@@ -9,7 +9,7 @@
     <?php echo  css_tag(array('admin/base.css'),$css) ?>
     <?php echo  script_tag(array('jquery/jquery-1.8.3.min.js', 'layer/layer.js', 'jquery/jquery.validate.1.9.min.js','jquery/jquery.metadata.js', 'My97DatePicker/WdatePicker.js', 'admin/base.js', 'admin/validate.js', 'jquery/plugins/jquery.form.js'), $js) ?>
     <!--[if IE 6]>
-        <?php echo  script_tag(array('jquery/jquery.fixpng.min.js'),$js) ?>    
+        <?php echo  script_tag(array('jquery/jquery.fixpng.min.js'),$js) ?>
         <script>DD_belatedPNG.fix('.pngfix')</script>
     <![endif]-->
 </head>
