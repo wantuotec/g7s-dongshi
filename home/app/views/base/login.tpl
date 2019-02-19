@@ -1,7 +1,7 @@
 <div id="login-wrapper">
     <div id="login-content">
         <div id="login-top" class="pngfix">
-            <img class="pngfix" src="<?php echo HOME_DOMAIN ?>public/images/admin/logo_title_bg.png" alt="<?php echo TITLE; ?>" />
+            <img class="pngfix" src="<?php echo HOME_DOMAIN ?>images/admin/logo_title_bg.png" alt="<?php echo TITLE; ?>" />
         </div>
         <form onsubmit="return false;">
             <?php if (1 == $mode) { ?>

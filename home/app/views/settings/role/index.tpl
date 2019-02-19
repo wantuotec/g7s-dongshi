@@ -85,9 +85,9 @@
                                     <td><?php echo $item['user_count']; ?></td>
                                     <td><?php echo $search_option['status'][$item['status']]; ?></td>
                                     <td>
-                                        <a href="<?php echo HOME_DOMAIN; ?>role/editRole/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/pencil.png" alt="编辑"/>编辑</a>
-                                        <a href="<?php echo HOME_DOMAIN; ?>role/manageUser/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/user.png" alt="编辑"/>成员管理</a>
-                                        <a href="<?php echo HOME_DOMAIN; ?>role/priv/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/priv.png" alt="编辑"/>权限管理</a>
+                                        <a href="<?php echo HOME_DOMAIN; ?>role/editRole/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="编辑"/>编辑</a>
+                                        <a href="<?php echo HOME_DOMAIN; ?>role/manageUser/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/user.png" alt="编辑"/>成员管理</a>
+                                        <a href="<?php echo HOME_DOMAIN; ?>role/priv/?id=<?php echo $item['id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/priv.png" alt="编辑"/>权限管理</a>
                                     </td>
                                 </tr>
                                 <?php endforeach; ?>

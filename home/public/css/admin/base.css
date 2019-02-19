@@ -8,7 +8,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 /* ?????????? */
 html {
-    background: url("/public/images/admin/bg-radial-gradient.gif") repeat-y scroll left top #F0F0F0;
+    background: url("../../images/admin/bg-radial-gradient.gif") repeat-y scroll left top #F0F0F0;
     font-size: 100%;
     height: 100%;
     margin-bottom: 1px;
@@ -121,7 +121,7 @@ p {
     float: right;
 }
 .submit {
-    /*background: url("/public/images/admin/bg-button-green.gif") repeat-x scroll left top #459300 !important;*/
+    /*background: url("../../images/admin/bg-button-green.gif") repeat-x scroll left top #459300 !important;*/
     /*border: 1px solid #459300 !important;*/
     background-color: #5F9EA0;
     border: 1px solid #5F9EA0 !important;
@@ -137,7 +137,7 @@ p {
     border: 1px solid #528B8B !important;
 }
 .button {
-    background: url("/public/images/admin/bg-button-gray.gif") repeat-x scroll left top #E9E9E9 !important;
+    background: url("../../images/admin/bg-button-gray.gif") repeat-x scroll left top #E9E9E9 !important;
     border: 1px solid #CCCCCC !important;
     color: #459300 !important;
     cursor: pointer;
@@ -209,7 +209,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     color: #fff;
 }
 #sidebar {
-    /*background: url("/public/images/admin/bg-body.gif") repeat-y scroll left top #F0F0F0;*/
+    /*background: url("../../images/admin/bg-body.gif") repeat-y scroll left top #F0F0F0;*/
     background-color: #22262e;
     color: #888888;
     font-size: 12px;
@@ -258,7 +258,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     display: block;
 }
 #sidebar #main-nav li a.nav-top-item {
-    background: url("/public/images/admin/bg-menu-item-blue.png") no-repeat scroll right center transparent;
+    background: url("../../images/admin/bg-menu-item-blue.png") no-repeat scroll right center transparent;
     color: #FFFFFF;
     cursor: pointer;
     display: block;
@@ -278,7 +278,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     right: 15px;
 }
 #sidebar #main-nav li a.current {
-    background-image: url("/public/images/admin/bg-menu-item-current.gif") !important;
+    background-image: url("../../images/admin/bg-menu-item-current.gif") !important;
     color: #333333;
     font-weight: bold;
 }
@@ -383,7 +383,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     padding: 10px 0;
 }
 #main-content ul li {
-    /*background: url("/public/images/admin/icons/bullet_black.png") no-repeat scroll left center transparent; */
+    /*background: url("../../images/admin/icons/bullet_black.png") no-repeat scroll left center transparent; */
     padding: 4px 0 4px 20px;
 }
 #main-content ol {
@@ -402,7 +402,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     margin: 0 0 20px;
 }
 .content-box-header {
-    /*background: url("/public/images/admin/bg-content-box.gif") repeat-x scroll left top #E5E5E5;*/
+    /*background: url("../../images/admin/bg-content-box.gif") repeat-x scroll left top #E5E5E5;*/
     height: 40px;
     margin-top: 1px;
     border-bottom: 1px solid #CCCCCC;
@@ -551,7 +551,7 @@ ul.content-box-tabs li a.current {
     border: 1px solid #DDDDDD;
 }
 .pagination a.current {
-    background: url("/public/images/admin/bg-button-green.gif") repeat-x scroll left top #469400 !important;
+    background: url("../../images/admin/bg-button-green.gif") repeat-x scroll left top #469400 !important;
     border-color: #459300 !important;
     color: #FFFFFF !important;
 }
@@ -559,7 +559,7 @@ ul.content-box-tabs li a.current {
     text-decoration: underline;
 }
 .shortcut-button {
-    background: url("/public/images/admin/shortcut-button-bg.gif") no-repeat scroll left top #F7F7F7;
+    background: url("../../images/admin/shortcut-button-bg.gif") no-repeat scroll left top #F7F7F7;
     border: 1px solid #DDD;
     display: block;
     margin: 0 0 20px;
@@ -652,23 +652,23 @@ form input[type="checkbox"], form input[type="radio"] {
     width: 99.8%;
 }
 .attention {
-    background: url("/public/images/admin/icons/exclamation.png") no-repeat scroll 10px 11px #FFFBCC;
+    background: url("../../images/admin/icons/exclamation.png") no-repeat scroll 10px 11px #FFFBCC;
     border-color: #E6DB55;
     color: #666452;
 }
 .information {
-    background: url("/public/images/admin/icons/information.png") repeat scroll 0 0 #DBE3FF;
+    background: url("../../images/admin/icons/information.png") repeat scroll 0 0 #DBE3FF;
     border-color: #A2B4EE;
     color: #585B66;
 }
 label.success {
-    background: url("/public/images/admin/icons/tick_circle.png") repeat scroll 0 0 #D5FFCE;
+    background: url("../../images/admin/icons/tick_circle.png") repeat scroll 0 0 #D5FFCE;
     border-color: #9ADF8F;
     color: #556652;
     padding-left: 18px;
 }
 label.error {
-    background: url("/public/images/admin/icons/cross_circle.png") no-repeat;
+    background: url("../../images/admin/icons/cross_circle.png") no-repeat;
     border-color: #DF8F8F;
     color: #665252;
     padding-left: 18px;
@@ -695,7 +695,7 @@ label.error {
     position: absolute;
     right: 5px;
     top: 5px;
-    background: url("/public/images/admin/icons/cross_grey_small.png")  no-repeat scroll 0 0 transparent;
+    background: url("../../images/admin/icons/cross_grey_small.png")  no-repeat scroll 0 0 transparent;
     display:block;
     width:7px;
     height:7px;
@@ -714,7 +714,7 @@ label.error {
 }
 
 #login-wrapper {
-    background: url("/public/images/admin/login-bg-img.jpg") no-repeat scroll 0 0;
+    background: url("../../images/admin/login-bg-img.jpg") no-repeat scroll 0 0;
     background-size: 100% 100%;
     color: #FFFFFF;
     height: 100%;
@@ -798,7 +798,7 @@ label.error {
     border-bottom-right-radius: 6px;
 }
 .popup-header {
-    background: url("/public/images/admin/bg-content-box.gif") repeat-x scroll left top #E5E5E5;
+    background: url("../../images/admin/bg-content-box.gif") repeat-x scroll left top #E5E5E5;
     height: 40px;
     margin-top: 1px;
     border-bottom: 1px solid #CCCCCC;

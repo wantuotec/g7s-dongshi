@@ -6,7 +6,6 @@
 */
 define('DOMAIN'      , 'dongshi.com');
 define('HOME_DOMAIN' , 'http://dev.' . DOMAIN . '/');
-define('IMG_DOMAIN'  , 'http://dev.' . DOMAIN . '/public/upload/images/');
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +27,11 @@ define('HTML_EDITION', 'v1');
 | 常用变量设置
 |--------------------------------------------------------------------------
 */
+// 保存上传文件的目录
+define("UPLOAD_FOLDER", HOME_DOMAIN . '/upload/');
+// 读取图片文件的目录(自定义上传的)
+define('UPLOAD_IMG_FOLDER'  , UPLOAD_FOLDER . 'images/');
+
 
 // 加载的网页模板版本
 define('HTML_EDITION', 'v1');

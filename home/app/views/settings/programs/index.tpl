@@ -120,7 +120,7 @@ function add_column(obj, group_id)
     }
 
     obj.parent().find("img").eq(1).attr("alt", "展开二级菜单");
-    obj.parent().find("img").eq(1).attr("src", "<?php echo HOME_DOMAIN ?>public/images/admin/icons/16/play_show.png");
+    obj.parent().find("img").eq(1).attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/play_show.png");
 }
 
 /**
@@ -198,9 +198,9 @@ function save_all()
                         <td>
                            <a href="javascript:;" onclick="update_display($(this), <?php echo $item['sysGroupId']?>)" >
                                <?php if($item['is_display'] == 1){?>
-                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/tick_circle.png">显示
+                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/tick_circle.png">显示
                                 <?php }else{ ?>
-                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/cross_circle.png">隐藏
+                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/cross_circle.png">隐藏
                                 <?php } ?>
                             </a>
                             <input type="hidden" name="menu[<?php echo $item['sysGroupId']; ?>][is_display]" value="<?php echo $item['is_display']; ?>" />
@@ -208,12 +208,12 @@ function save_all()
 
                         <td>
                             <input type="hidden" value="<?php echo HOME_DOMAIN.'programs/edit_program/?id='.$item['id'] ?>">
-                            <a href="javascript:;" onclick="add_column($(this), <?php echo $item['sysGroupId']; ?>)"><img src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/16/add.png" alt="Add"/>添加二级菜单</a>
+                            <a href="javascript:;" onclick="add_column($(this), <?php echo $item['sysGroupId']; ?>)"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/add.png" alt="Add"/>添加二级菜单</a>
 
                             <a style="cursor:pointer;" href="javascript:;" onclick="play_show($(this), <?php echo $item['sysGroupId']; ?>);">
-                                <img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/16/play.png" alt="展开菜单"/>展开二级菜单
+                                <img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/play.png" alt="展开菜单"/>展开二级菜单
                             </a>
-                            <a href="javascript:;" onclick="del($(this));"><img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/cross.png" alt="删除" />删除</a></td>
+                            <a href="javascript:;" onclick="del($(this));"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a></td>
                         </td>
                     </tr>
 
@@ -227,9 +227,9 @@ function save_all()
                         <td>
                            <a href="javascript:;" onclick="update_display($(this), <?php echo $item['sysGroupId']?>)" >
                                <?php if($val['is_display'] == 1){?>
-                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/tick_circle.png">显示
+                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/tick_circle.png">显示
                                 <?php }else{ ?>
-                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>public/images/admin/icons/cross_circle.png">隐藏
+                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/cross_circle.png">隐藏
                                 <?php } ?>
                             </a>
                             <input type="hidden" name="menu[<?php echo $val['sysGroupId']; ?>][sub][<?php echo $key; ?>][is_display]" value="<?php echo $val['is_display']; ?>" />
@@ -237,7 +237,7 @@ function save_all()
 
                         <td>
                            <input type="hidden" name="menu[<?php echo $val['sysGroupId']; ?>][sub][<?php echo $key; ?>][id]" value="<?php echo $val['id']; ?>" />
-                            <a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>public/images/admin/icons/cross.png" alt="删除" />删除</a>
+                            <a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a>
                         </td>
                    </tr>
 

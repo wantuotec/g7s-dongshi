@@ -439,7 +439,7 @@ if (!function_exists('script_tag')) {
             $data = array_merge($data,$append_data);
         }
         foreach ($data as &$item) {
-            $output .= '<script src="' . HOME_DOMAIN . 'public/js/' . $item . (strstr($item, '?') ? '&' : '?') . 'v=' . JS_VERSION . '" type="text/javascript"></script>';
+            $output .= '<script src="' . HOME_DOMAIN . 'js/' . $item . (strstr($item, '?') ? '&' : '?') . 'v=' . JS_VERSION . '" type="text/javascript"></script>';
         }
         return $output;
     }
@@ -463,7 +463,7 @@ if (!function_exists('css_tag')) {
             $data = array_merge($data,$append_data);
         }
         foreach ($data as &$item) {
-            $output .= '<link href="' . HOME_DOMAIN . 'public/css/' . $item . (strstr($item, '?') ? '&' : '?') . 'v=' . CSS_VERSION . '" rel="stylesheet" type="text/css" />';
+            $output .= '<link href="' . HOME_DOMAIN . 'css/' . $item . (strstr($item, '?') ? '&' : '?') . 'v=' . CSS_VERSION . '" rel="stylesheet" type="text/css" />';
         }
         return $output;
     }

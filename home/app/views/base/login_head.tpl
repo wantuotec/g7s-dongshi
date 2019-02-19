@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <link rel="shortcut icon" href="<?php echo HOME_DOMAIN;?>public/images/admin/icons/dhsp.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo HOME_DOMAIN;?>images/admin/icons/dhsp.ico" type="image/x-icon" />
     <title><?php echo TITLE ?></title>
     <meta name="description" content=""/>
     <?php echo css_tag(array('admin/base.css'),$css) ?>

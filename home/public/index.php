@@ -20,8 +20,6 @@
 
 // 初始化应用环境
 define('ENVIRONMENT', 'development');
-// 保存上传文件的目录
-define("UPLOAD_IMG_DOMAIN",dirname(__FILE__) . '/public/upload/images/');
 
 /*
  *---------------------------------------------------------------
@@ -62,7 +60,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-  $system_path = 'system';
+  $system_path = '../../system';
 /*
  *---------------------------------------------------------------
  * APPLICATION FOLDER NAME
@@ -77,7 +75,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-  $application_folder = 'home/app';
+  $application_folder = '../app';
 
 /*
  * --------------------------------------------------------------------

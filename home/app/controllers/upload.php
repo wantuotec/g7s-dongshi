@@ -29,7 +29,7 @@ class Upload extends CI_Controller
         $image_path  = $origin_path . '/' . $logic_type;
 
         // 存储目录的公共路径
-        $prefix_path = UPLOAD_IMG_DOMAIN;
+        $prefix_path = UPLOAD_FOLDER . 'images/';
 
         //文件保存目录URL
         $save_path = $prefix_path . $image_path;
