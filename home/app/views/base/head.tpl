@@ -6,7 +6,7 @@
     <meta name="renderer" content="webkit">
     <link rel="shortcut icon" href="<?php echo HOME_DOMAIN;?>images/admin/icons/dhsp.ico" type="image/x-icon" />
     <title><?php echo TITLE; ?><?php if($title){echo ' - '.$title;} ?></title>
-    <?php echo  css_tag(array('admin/base.css'),$css) ?>
+    <?php echo  css_tag(array('base.css'),$css) ?>
     <?php echo  script_tag(array('jquery/jquery-1.8.3.min.js', 'layer/layer.js', 'jquery/jquery.validate.1.9.min.js','jquery/jquery.metadata.js', 'My97DatePicker/WdatePicker.js', 'base.js', 'validate.js', 'jquery/plugins/jquery.form.js'), $js) ?>
     <!--[if IE 6]>
         <?php echo  script_tag(array('jquery/jquery.fixpng.min.js'),$js) ?>

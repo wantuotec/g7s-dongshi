@@ -4,7 +4,7 @@
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link rel="shortcut icon" href="<?php echo HOME_DOMAIN;?>images/admin/icons/dhsp.ico" type="image/x-icon" />
     <title><?php echo TITLE; ?><?php if($title) ' - '.$title ?></title>
-    <?php echo css_tag(array('admin/base.css'),$css) ?>
+    <?php echo css_tag(array('base.css'),$css) ?>
     <?php echo script_tag(array('jquery/jquery-1.8.3.min.js'), $js) ?>
     <script>
         var keepLogin = function () {

@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="<?php echo HOME_DOMAIN;?>images/admin/icons/dhsp.ico" type="image/x-icon" />
     <title><?php echo TITLE ?></title>
     <meta name="description" content=""/>
-    <?php echo css_tag(array('admin/base.css'),$css) ?>
+    <?php echo css_tag(array('base.css'),$css) ?>
     <?php echo script_tag(array('jquery/jquery-1.8.3.min.js','base.js'),$js) ?>
     <!--[if IE 6]>
         <?php echo script_tag(array('jquery/jquery.fixpng.min.js'),$js) ?>    
