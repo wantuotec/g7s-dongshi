@@ -12,6 +12,7 @@
 
     $.DOMAIN = {
         WWW  : 'http://' + PREFIX + 'www.'  + DOMAIN + '/',
+        BKD  : 'http://' + PREFIX + 'bkd.'  + DOMAIN + '/',
         MAIN : DOMAIN
     };
 
@@ -211,6 +212,20 @@
             window.location.reload();
         },
 
+        /**
+         * 定时刷新当前页面
+         *
+         * @params  e   object  数据对象
+         *
+         * @return  boolean
+         */
+        timedRefresh: function (e) {
+            var time = e.data || null;
+            if (time != null) {
+                setInterval($.BKD.refresh, time);
+            }
+        },
+
         /*
          * 父页面刷新
          */
@@ -218,11 +233,16 @@
             parent.window.location.reload();
         },
 
-        /*
-         * 打开新页面
+        /**
+         * 页面重定向
+         * @return  bool
          */
         redirect : function (url) {
-            window.location.href = url;
+            if (typeof url == 'object' && typeof url.data != undefined && url.data.url) {
+                window.location.href = url.data.url;
+            } else if (typeof url == 'string') {
+                window.location.href = url;
+            }
         },
 
         /**
@@ -280,6 +300,82 @@
             var height   = height   || 'auto';
             var is_modal = typeof(is_modal) != 'undefined' && false === is_modal ? false : true;
             var title    = title    || '';
+
+            // ------------------------ 弹出窗自适应屏幕 START ------------------------
+            var clientWidth = 0;
+            var clientHeight = 0;
+            var center_width = '50%';
+            var center_height = 200;
+            if (typeof window.innerHeight == 'undefined') {
+                clientWidth  = document.body.clientWidth;
+                if (document.documentElement.clientHeight > document.body.clientHeight){
+                    clientHeight = document.documentElement.clientHeight;
+                } else {
+                    clientHeight = document.body.clientHeight;
+                }
+            } else {
+                clientWidth  = document.documentElement.clientWidth;
+                clientHeight = document.documentElement.clientHeight;
+            }
+            if(height != 'auto') {
+                height = height.replace('px', '');
+            }
+            if(width != 'auto') {
+                width = width.replace('px', '');
+            }
+
+            if (width != 'auto' && Number(width) > clientWidth) {
+                width = clientWidth * 0.9;
+            }
+            if (height != 'auto' && Number(height) > clientHeight) {
+                height = clientHeight * 0.9;
+            }
+
+            if(height != 'auto') {
+                center_height = (clientHeight - height) / 2;
+            }
+            if(width != 'auto') {
+                center_width = (clientWidth - width) / 2;
+            }
+            // ------------------------ 弹出窗自适应屏幕  END ------------------------
+
+            var config = {
+                title  : [title           , false],
+                area   : [width+"px"      , height+"px"],
+                move   : ['.xubox_border' , true],
+                shade  : [0.2 , '#000000' , is_modal],
+                offset : [center_height+"px", center_width+"px"]
+            };
+
+            if ('iframe' == type) {
+                config.type   = 2;
+                config.content = target;
+            } else {
+                config.type   = 1;
+                config.content = target;
+            }
+
+            $.BKD.layer_index = layer.open(config);
+            return $.BKD.layer_index;
+        },
+
+        /**
+         * 弹窗函数-适用于使用js生成的节点点击弹窗
+         *
+         * @params  string  type        弹窗类型 iframe 或 div
+         * @params  string  target      iframe时为链接地址 div时为目标的ID 如#abc
+         * @params  string  width       宽
+         * @params  string  height      高
+         * @params  boolean is_modal    是否模态窗口
+         *
+         * @return  int 弹窗的索引
+         */
+        to_open : function (type, target, width, height, title, is_modal) {
+            var type     = type     || 'div';
+            var width    = width    || 'auto';
+            var height   = height   || 'auto';
+            var title    = title    || '';
+            var is_modal = typeof(is_modal) != 'undefined' && false === is_modal ? false : true;
 
             // ------------------------ 弹出窗自适应屏幕 START ------------------------
             var clientWidth = 0;
@@ -423,6 +519,37 @@
         },
 
         /**
+         * 通用调试
+         *
+         * @return  void
+         */
+        log : function () {
+            arguments = Array.prototype.slice.apply(arguments);
+
+            if ('undefined' === typeof console || window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger') {
+                var id = 'output_log_debug';
+                if (!document.getElementById(id)) {
+                    var output = document.createElement('div');
+                    output.id = id;
+                    document.body.appendChild(output);
+                    // document.body.insertBefore(output, document.body.firstChild);
+                }
+                var target = document.getElementById(id);
+                var output = target.innerHTML;
+
+                for (var i in arguments) {
+                    output += arguments[i] + '<br />';
+                }
+
+                target.innerHTML = output;
+            } else {
+                for (var i in arguments) {
+                    console.log(arguments[i]);
+                }
+            }
+        },
+
+        /**
          * 弹出消息
          *
          * @params  string  message 提示信息
@@ -442,6 +569,28 @@
          */
         confirm : function (message) {
             return confirm(message);
+        },
+
+        /**
+         * 弹出输入框
+         *
+         * @params  string  message         提示信息
+         *
+         * @return  bool
+         */
+        prompt : function (message) {
+            return prompt(message);
+        },
+
+        /**
+         * 隐藏指定对象
+         */
+        hide : function (e) {
+            if (typeof e == 'object' && typeof e.data != undefined && e.data.obj_name) {
+                $(e.data.obj_name).hide();
+            } else if (typeof e == 'string') {
+                $(e).hide();
+            }
         },
 
         /**
@@ -848,36 +997,21 @@
         },
 
         /**
-         * 省市区三级联动
+         * 点击显示图片大图
          *
-         * @param   int       province_code       父级城市id
-         * @param   object    operation 城市的下拉框对象
+         * 提示：需要在页面上提前加载此方法一次
+         *
+         * @params  e      object    数据对象
+         *
+         * @return  bool
          */
-        get_city : function(province_code, operation) {
-            if (province_code) {
-                $.post($.DOMAIN.BKD + 'area/get_city_list', {"province_code" : province_code}, function (response) {
-                    if (response.success === false) {
-                        $.BKD.msg(response.message);
-                    } else {
-                        options = "";
-                        options += "<option value=\"\">请选择</option>";
-                        var code = operation.attr('code');
+        showPhoto : function (e) {
+            var outer = $(this) || null;  // 目标图片或包裹它的外层 如：div|span
 
-                        for(key in response.data) {
-                            options += "<option "+((code === response.data[key]['area_code']) ? 'selected' : '')+" value="+response.data[key]['area_code']+">"+response.data[key]['area_name']+"</option>";
-                        }
-                        operation.html(options);
-                    }
-                } , 'json');
-            }else{
-                if(operation.attr("name") == 'city_code'){
-                    operation.html("<option value=\"\">请选择</option>");
-                    $("#district_code").html("<option value=\"\">请选择</option>");
-                }else{
-                    operation.html("<option value=\"\">请选择</option>");
-                }
-
-            }
+            layer.photos({
+                photos: outer
+                ,anim: 1  //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+            });
         },
 
     };

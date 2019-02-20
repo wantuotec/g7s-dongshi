@@ -15,27 +15,27 @@
             <ul class="shortcut-buttons-set">
                 
                 <li><a class="shortcut-button" href="#"><span>
-                    <img src="<?php echo HOME_DOMAIN ?>public/image/icons/pencil_48.png" alt="icon"><br>
+                    <img src="<?php echo HOME_DOMAIN ?>images/admin/icons/pencil_48.png" alt="icon"><br>
                     快捷方式1
                 </span></a></li>
                 
                 <li><a class="shortcut-button" href="#"><span>
-                    <img src="<?php echo HOME_DOMAIN ?>public/image/icons/paper_content_pencil_48.png" alt="icon"><br>
+                    <img src="<?php echo HOME_DOMAIN ?>images/admin/icons/paper_content_pencil_48.png" alt="icon"><br>
                     快捷方式2
                 </span></a></li>
                 
                 <li><a class="shortcut-button" href="#"><span>
-                    <img src="<?php echo HOME_DOMAIN ?>public/image/icons/image_add_48.png" alt="icon"><br>
+                    <img src="<?php echo HOME_DOMAIN ?>images/admin/icons/image_add_48.png" alt="icon"><br>
                     快捷方式3
                 </span></a></li>
                 
                 <li><a class="shortcut-button" href="#"><span>
-                    <img src="<?php echo HOME_DOMAIN ?>public/image/icons/clock_48.png" alt="icon"><br>
+                    <img src="<?php echo HOME_DOMAIN ?>images/admin/icons/clock_48.png" alt="icon"><br>
                     快捷方式4
                 </span></a></li>
                 
                 <li><a class="shortcut-button" href="#messages" rel="modal"><span>
-                    <img src="<?php echo HOME_DOMAIN ?>public/image/icons/comment_48.png" alt="icon"><br>
+                    <img src="<?php echo HOME_DOMAIN ?>images/admin/icons/comment_48.png" alt="icon"><br>
                     快捷方式5
                 </span></a></li>
                 
@@ -114,9 +114,9 @@
                                 </tr>
                                 <tr>    
                                     <td>日期选择器：</td>
-                                    <td><input class="text-input Wdate" name="start_time" type="text"></td>
+                                    <td><input class="text-input Wdate" name="start_time" type="text" autocomplete="off"></td>
                                     <td>时间选择器：</td>
-                                    <td><input class="text-input Wdate" name="start_time" type="text" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"></td>
+                                    <td><input class="text-input Wdate" name="start_time" type="text" autocomplete="off" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"></td>
                                 </tr> 
                                 </tbody>
 
@@ -231,9 +231,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -245,9 +245,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -259,9 +259,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -273,9 +273,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -287,9 +287,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -301,9 +301,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -315,9 +315,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                                 
@@ -329,9 +329,9 @@
                                     <td>文字</td>
                                     <td>
                                         <!-- base/icons -->
-                                         <a href="#" title="Edit"><img src="/image/icons/pencil.png" alt="Edit"></a>
-                                         <a href="#" title="Delete"><img src="/image/icons/cross.png" alt="Delete"></a> 
-                                         <a href="#" title="Edit Meta"><img src="/image/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
+                                         <a href="#" title="Edit"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/pencil.png" alt="Edit"></a>
+                                         <a href="#" title="Delete"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="Delete"></a>
+                                         <a href="#" title="Edit Meta"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/hammer_screwdriver.png" alt="Edit Meta"></a>
                                     </td>
                                 </tr>
                             </tbody>
