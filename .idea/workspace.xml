@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/home/app/controllers/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/config/development/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/development/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/base/template.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/base/template.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/public/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/public/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/base/head.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/base/head.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -119,7 +114,6 @@
         <option value="$PROJECT_DIR$/home/app/views/settings/programs/index.tpl" />
         <option value="$PROJECT_DIR$/home/app/config/development/rwdb.php" />
         <option value="$PROJECT_DIR$/home/public/js/admin/base.js" />
-        <option value="$PROJECT_DIR$/home/app/views/base/head.tpl" />
         <option value="$PROJECT_DIR$/home/app/views/base/login_head.tpl" />
         <option value="$PROJECT_DIR$/home/app/views/base/index.tpl" />
         <option value="$PROJECT_DIR$/home/app/config/development/constants.php" />
@@ -127,6 +121,7 @@
         <option value="$PROJECT_DIR$/home/public/css/base.css" />
         <option value="$PROJECT_DIR$/home/app/controllers/template.php" />
         <option value="$PROJECT_DIR$/home/app/views/base/template.tpl" />
+        <option value="$PROJECT_DIR$/home/app/views/base/head.tpl" />
       </list>
     </option>
   </component>
@@ -162,12 +157,6 @@
               <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dongshi" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,12 +196,12 @@
       <workItem from="1550455636843" duration="17855000" />
       <workItem from="1550484335421" duration="72000" />
       <workItem from="1550542413284" duration="21234000" />
-      <workItem from="1550628681382" duration="5044000" />
+      <workItem from="1550628681382" duration="6320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61897000" />
+    <option name="totallyTimeSpent" value="63173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -247,13 +236,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/app/views/configure/add.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/models/role_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -500,13 +482,6 @@
         <state relative-caret-position="-8690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/base/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -549,6 +524,22 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/public/js/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/base/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
