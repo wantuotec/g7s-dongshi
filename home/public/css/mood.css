@@ -1,0 +1,107 @@
+@charset "gb2312";
+
+/* CSS Document */
+
+.moodlist {
+    margin:0px auto;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* --------------------å¿?????è¡?-------------------- */
+
+.bloglist-wrap {
+    width: 100%;
+    background: url(../images/wall6.png) repeat;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+}
+
+.bloglist {
+    width: 1050px;
+    margin: 0 auto;
+    /*background: url(../images/wall2.jpg) repeat 1050px;*/
+}
+
+.arrow-box {
+    background-color: #FFF;
+    box-shadow: 0px 1px 0px rgba(255,255,255,.1),inset 0px 1px 1px rgba(214, 214, 214, 0.7);
+    width: 750px;
+    border-radius: 6px;
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0;
+    position: relative;
+}
+
+.pin {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -12px;
+    top: -20px;
+}
+
+.sy {
+    overflow: hidden;
+}
+
+.arrow-box .content-box:hover {
+    text-shadow: #f7f7f7 1px 1px 1px;
+}
+
+.arrow-box img {
+    display: inline;
+}
+
+.arrow-box p {
+    line-height: 24px;
+    padding: 5px 5px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+}
+
+.arrow-box:before { content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 0 20px 22px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    left: 750px; top: 23px;
+}/* ä¸?è§?å½? */
+
+.arrow-box:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 778px;
+    top: 16px;
+    background: #CCCCCE;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+}/* ??å½? */
+
+.arrow-box:hover:before {
+    border-color: transparent transparent transparent #7CCD7C;
+}/* ä¸?è§?å½? */
+
+.arrow-box:hover:after {
+    border: #fff 2px solid;
+    background: #7CCD7C;
+}/* ??å½? */
+
+.mood_date_view {
+    position: absolute;
+    left: 808px;
+    top: 20px;
+    width: 125px;
+    line-height: 30px;
+    background: #7CCD7C;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+}

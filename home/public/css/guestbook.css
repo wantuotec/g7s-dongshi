@@ -1,0 +1,267 @@
+.guestbook-main {
+    width: 1050px;
+    margin: 20px auto;
+    min-height: 600px;
+}
+
+.guestbook-main .cont-left {
+    width: 800px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* 留言框-开始 */
+.guestbook-main .message-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.guestbook-main .message-input .clear { clear: both; }
+
+.guestbook-main p.message-title {
+    color: #999;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.guestbook-main .message-input .cont-box{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #FFA07A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+}
+
+.guestbook-main .message-input .cont-box .main-text{
+    width: 96.6%;
+    height: 86.9%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #999;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    resize:none;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+.guestbook-main .message-input .tools-box{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #FFA07A;
+    margin-top: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+}
+.guestbook-main .message-input .tools-box .operator-box-btn{
+    width: 85%;
+    height: 30px;
+    float: left;
+}
+.guestbook-main .message-input .tools-box .operator-box-btn .main-face-icon{
+    display: block;
+    float: left;
+    margin-top:-1px;
+    margin-left: 10px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+.guestbook-main .message-input .tools-box .operator-box-btn .main-face-icon:hover{ color: #FFA07A; }
+.guestbook-main .message-input .tools-box .operator-box-btn .img-icon{
+    display: block;
+    float: left;
+    margin-top:-11px;
+    margin-left: 10px;
+    font-family: "微软雅黑";
+    font-size: 33px;
+    font-weight: lighter;
+    color: #FFA07A;
+    cursor: pointer;
+}
+.guestbook-main .message-input .tools-box .submit-btn{
+    width: 15%;
+    height: 30px;
+    float: right;
+}
+
+.guestbook-main .message-input .tools-box .submit-btn input{
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #FFA07A;
+}
+/* 留言框-结束 */
+
+/* 回复部分样式，与文章评论部分公用-开始 */
+.reply-one-item {
+    width: 100%;
+    border: 1px solid #9AC0CD;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.reply-cont { 
+    padding: 8px;
+    border-bottom: 1px solid #9AC0CD;
+}
+
+.reply-cont figure {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+    padding: 2px;
+}
+
+.reply-cont figure img {
+    width: 100%;
+    height: 100%; 
+}
+
+.reply-cont p.visitor {
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0px 0px 5px 60px;
+}
+
+.reply-cont p.visitor span {
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+.reply-cont p.message {
+    margin-left: 60px;
+    letter-spacing: 2px;
+    line-height: 18px;
+    text-indent: 2em;
+    font-size: 12px !important;
+    font-family: NSimSun !important;
+}
+
+.reply-box {
+    padding-left: 60px;
+    margin: 5px 0px;
+}
+
+.admin-reply-box {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.admin-reply-box .reply-user {
+    font-size: 10px;
+    color: #696969;
+}
+
+.reply-cont .reply_date_view {
+    height: 22px;
+    line-height: 20px;
+    color: #A9A9A9;
+}
+
+.reply-cont .reply_date_view span {
+    display: inline-block;
+    height: 20px;
+}
+
+.reply-cont .reply_date_view .to-reply {
+    margin-left: 40px;
+    padding-left: 25px;
+    background: url(../images/message_grey_24.png) no-repeat left center;
+    background-size: 15px 14px;
+    opacity: 0.5;
+}
+
+.reply-cont .reply_date_view .to-reply:hover {
+    color: #9ACD32;
+    cursor: pointer;
+    background: url(../images/message_red_24.png) no-repeat left center;
+    background-size: 15px 14px;
+    opacity: 1;
+}
+
+.reply-message {
+    margin-top: 5px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+    line-height: 18px;
+    font-size: 12px !important;
+    font-family: NSimSun !important;
+}
+
+.reply-admin-wrap {
+    height: 30px;
+    border: 1px solid #9AC0CD;
+}
+
+.reply-admin-wrap div {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.reply-admin-wrap div.reply-face-icon {
+    width: 5%;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    cursor: pointer
+}
+
+.reply-admin-wrap div.input-reply {
+    width: 88%;
+}
+
+.reply-admin-wrap div.input-reply input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #9AC0CD;
+}
+
+.reply-admin-wrap div.submit-reply {
+    width: 7%;
+}
+
+.reply-admin-wrap div.submit-reply input {
+    width: 101%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #FFA07A;
+}
+
+.empty-message {
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.guestbook-main .cont-right {
+    width: 220px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    border: 1px solid #ededed;
+    float: left;
+    margin-top: 30px;
+}
