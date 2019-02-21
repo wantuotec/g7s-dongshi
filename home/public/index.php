@@ -19,7 +19,7 @@
  */
 
 // 初始化应用环境
-define('ENVIRONMENT', 'production');
+define('ENVIRONMENT', 'development');
 
 /*
  *---------------------------------------------------------------
