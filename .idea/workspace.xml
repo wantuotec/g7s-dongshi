@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/daos/configure_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/configure_dao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/configure_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/models/configure_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/base/template.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/base/template.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/public/js/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/public/js/guestbook_input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/article/s_article_category_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/article/s_article_comment_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/article/s_article_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/base/s_captcha_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/base/s_configure_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/base/s_content_manage_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/member/s_guestbook_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/mood/s_mood_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/operation/s_about_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/operation/s_module_manage_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/operation/s_slogan_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/operation/s_website_notice_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/photos/s_photos_album_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/daos/photos/s_photos_dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/article/s_article_category_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/article/s_article_comment_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/article/s_article_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/base/s_captcha_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/base/s_content_manage_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/member/s_guestbook_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/mood/s_mood_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/operation/s_about_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/operation/s_module_manage_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/operation/s_slogan_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/operation/s_website_notice_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/photos/s_photos_album_model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/models/photos/s_photos_model.php" beforeDir="false" />
-    </list>
+    <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +14,8 @@
       <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="1035" lean-forward="true" selection-start-line="1035" selection-end-line="1035" />
+            <state relative-caret-position="172">
+              <caret line="1021" column="38" lean-forward="true" selection-start-line="1021" selection-start-column="38" selection-end-line="1021" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -162,7 +127,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="40" />
     <option name="y" value="104" />
     <option name="width" value="1620" />
@@ -190,19 +155,6 @@
               <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dongshi" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,12 +195,12 @@
       <workItem from="1550484335421" duration="72000" />
       <workItem from="1550542413284" duration="21234000" />
       <workItem from="1550628681382" duration="6320000" />
-      <workItem from="1550715195029" duration="21569000" />
+      <workItem from="1550715195029" duration="21926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84742000" />
+    <option name="totallyTimeSpent" value="85099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -610,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="1035" lean-forward="true" selection-start-line="1035" selection-end-line="1035" />
+        <state relative-caret-position="172">
+          <caret line="1021" column="38" lean-forward="true" selection-start-line="1021" selection-start-column="38" selection-end-line="1021" selection-end-column="38" />
         </state>
       </provider>
     </entry>
