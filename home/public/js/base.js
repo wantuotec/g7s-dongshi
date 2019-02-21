@@ -3,7 +3,7 @@
  */
 (function($){
     // 顶级域名
-    window.DOMAIN = window.location.href.indexOf('dongshi.com') > -1 ? 'dongshi.com' : 'dongshi.dev';
+    window.DOMAIN = window.location.href.indexOf('wantuotec.com') > -1 ? 'wantuotec.com' : 'wantuotec.dev';
     // 自动选择域名前缀
     window.PREFIX = '';
     if (/http(s?):\/\/dev/.test(window.location.href)) {

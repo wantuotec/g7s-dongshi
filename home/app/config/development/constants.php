@@ -4,7 +4,7 @@
 | Domain constants
 |--------------------------------------------------------------------------
 */
-define('DOMAIN'      , 'dongshi.com');
+define('DOMAIN'      , 'wantuotec.com');
 define('HOME_DOMAIN' , 'http://devbkd.' . DOMAIN . '/');
 
 /*
