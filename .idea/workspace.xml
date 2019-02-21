@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="" />
+    <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
+      <change beforePath="$PROJECT_DIR$/home/app/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/controllers/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/template.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +14,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="1021" column="38" lean-forward="true" selection-start-line="1021" selection-start-column="38" selection-end-line="1021" selection-end-column="38" />
+            <state relative-caret-position="235">
+              <caret line="1024" column="11" lean-forward="true" selection-start-line="1024" selection-start-column="11" selection-end-line="1024" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/app/controllers/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home/app/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -92,7 +122,6 @@
         <option value="$PROJECT_DIR$/home/public/css/admin/base.css" />
         <option value="$PROJECT_DIR$/home/public/index.php" />
         <option value="$PROJECT_DIR$/home/app/controllers/upload.php" />
-        <option value="$PROJECT_DIR$/home/app/config/constants.php" />
         <option value="$PROJECT_DIR$/home/app/views/base/siderbar.tpl" />
         <option value="$PROJECT_DIR$/home/app/views/settings/role/index.tpl" />
         <option value="$PROJECT_DIR$/home/app/views/settings/user/index.tpl" />
@@ -105,7 +134,6 @@
         <option value="$PROJECT_DIR$/home/app/views/base/index.tpl" />
         <option value="$PROJECT_DIR$/home/app/config/development/constants.php" />
         <option value="$PROJECT_DIR$/home/public/css/base.css" />
-        <option value="$PROJECT_DIR$/home/app/controllers/template.php" />
         <option value="$PROJECT_DIR$/home/app/views/base/head.tpl" />
         <option value="$PROJECT_DIR$/home/app/views/base/template.tpl" />
         <option value="$PROJECT_DIR$/home/app/controllers/role.php" />
@@ -115,6 +143,8 @@
         <option value="$PROJECT_DIR$/home/app/daos/configure_dao.php" />
         <option value="$PROJECT_DIR$/home/app/models/configure_model.php" />
         <option value="$PROJECT_DIR$/home/public/js/base.js" />
+        <option value="$PROJECT_DIR$/home/app/controllers/template.php" />
+        <option value="$PROJECT_DIR$/home/app/config/constants.php" />
       </list>
     </option>
   </component>
@@ -154,7 +184,15 @@
             <path>
               <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dongshi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,12 +233,12 @@
       <workItem from="1550484335421" duration="72000" />
       <workItem from="1550542413284" duration="21234000" />
       <workItem from="1550628681382" duration="6320000" />
-      <workItem from="1550715195029" duration="21926000" />
+      <workItem from="1550715195029" duration="23334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85099000" />
+    <option name="totallyTimeSpent" value="86507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -318,20 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/public/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -362,13 +386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="83" column="138" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -543,13 +560,6 @@
         <state relative-caret-position="-1323" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/configure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/base/template.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -560,10 +570,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/configure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="1021" column="38" lean-forward="true" selection-start-line="1021" selection-start-column="38" selection-end-line="1021" selection-end-column="38" />
+        <state relative-caret-position="235">
+          <caret line="1024" column="11" lean-forward="true" selection-start-line="1024" selection-start-column="11" selection-end-line="1024" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

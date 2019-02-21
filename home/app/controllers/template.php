@@ -15,7 +15,7 @@ class template extends CI_Controller
     public function index()
     {
         $this->load->view('base/head.tpl');
-        $this->load->view('base/template.tpl', $data);
+        $this->load->view('base/template.tpl');
         $this->load->view('base/foot.tpl');
     }
 }
