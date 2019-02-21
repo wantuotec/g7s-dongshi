@@ -77,7 +77,6 @@ class Configure_model extends CI_Model
 
         $this->load->dao("Configure_dao");
         $result = $this->Configure_dao->get($search);
-
         if (false == $result) {
             $this->set_error($this->Configure_dao->get_error());
             return false;
@@ -393,18 +392,18 @@ class Configure_model extends CI_Model
         }
 
         // 需要刷新 memcache
-        if (!$is_refresh) {
-            $this->load->library('memcache');
-            $result = $this->memcache->get($this->__memcache_prefix . $configure_name);
-        }
+//        if (!$is_refresh) {
+//            $this->load->library('memcache');
+//            $result = $this->memcache->get($this->__memcache_prefix . $configure_name);
+//        }
 
         if (empty($result) || $is_refresh) {
             $result = $this->get_by_name($configure_name);
 
-            if(!empty($result['configure_name'])) {
-                $this->load->library('memcache');
-                $this->memcache->set($this->__memcache_prefix . $result['configure_name'], $result, $this->__memcache_expire_time);
-            }
+//            if(!empty($result['configure_name'])) {
+//                $this->load->library('memcache');
+//                $this->memcache->set($this->__memcache_prefix . $result['configure_name'], $result, $this->__memcache_expire_time);
+//            }
         }
 
         return variable_template($result['configure_value'], $replace);

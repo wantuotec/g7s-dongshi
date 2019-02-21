@@ -3,7 +3,7 @@
  */
 (function($){
     // 顶级域名
-    window.DOMAIN = window.location.href.indexOf('dreamma.cn') > -1 ? 'dreamma.cn' : 'dreamma.dev';
+    window.DOMAIN = window.location.href.indexOf('dongshi.com') > -1 ? 'dongshi.com' : 'dongshi.dev';
     // 自动选择域名前缀
     window.PREFIX = '';
     if (/http(s?):\/\/dev/.test(window.location.href)) {
@@ -950,7 +950,7 @@
          *
          */
         notification : function (title, body, icon, tag, autoCloseTime) {
-            var icon  = icon  || $.DOMAIN.BKD + 'image/logo128.png';
+            var icon  = icon  || $.DOMAIN.BKD + 'images/admin/logo.png';
 
             if (!("Notification" in window)) {
                 alert("你现在使用的浏览器不支持桌面通知，请换成Chrome、Firefox或者极速模式");
@@ -983,10 +983,12 @@
             // Notification.permission granted default denied
             if (Notification.permission ==="granted") {
                 var notification = new createNotification(title, body, icon, tag, autoCloseTime);
+                $.BKD.autoalarm();
             } else if (Notification.permission === 'default') {
                 Notification.requestPermission(function (permission) {
                     if (permission ==="granted") {
                         var notification = new createNotification(title, body, icon, tag, autoCloseTime);
+                        $.BKD.autoalarm();
                     } else {
                         alert('请把浏览器设置为允许通知');
                     }
@@ -994,6 +996,30 @@
             } else {
                 alert('请把浏览器设置为允许通知');
             }
+        },
+
+        /**
+         * 调用浏览器声音通知-触发播放
+         */
+        triggeralarm : function (trigger) {
+            if ($('#chatAudio').length <= 0){
+                $('<audio id="chatAudio"><source src="../voice/newtask.mp3" type="audio/mpeg"></audio>').appendTo('body');
+            }
+            // 监控触发
+            $('#'+trigger).click(function () {
+                $('#chatAudio')[0].play();
+            });
+        },
+
+        /**
+         * 调用浏览器声音通知-自动播放
+         */
+        autoalarm : function (circulationTime=5, closeCirculation=5) {
+            if ($('#chatAudio').length <= 0){
+                alert('正在重新建立通知播放对象');
+                $('<audio id="chatAudio"><source src="../voice/newtask.mp3" type="audio/mpeg"></audio>').appendTo('body');
+            }
+            $('#chatAudio')[0].play();
         },
 
         /**
@@ -1018,11 +1044,6 @@
 })(jQuery);
 
 $(document).ready(function () {
-    // 绑定日期插件
-    $(".Wdate").live('click', function () {
-        WdatePicker();
-    });
-
     $.BKD.check_all();
 
     $.BKD.dropMenu();

@@ -114,10 +114,14 @@
                                 </tr>
                                 <tr>    
                                     <td>日期选择器：</td>
-                                    <td><input class="text-input Wdate" name="start_time" type="text" autocomplete="off"></td>
+                                    <td><input class="text-input Wdate" id="start_time_001" name="start_time" type="text" autocomplete="off"></td>
                                     <td>时间选择器：</td>
-                                    <td><input class="text-input Wdate" name="start_time" type="text" autocomplete="off" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"></td>
-                                </tr> 
+                                    <td><input class="text-input Wdate" id="start_time_002" name="start_time" type="text" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td>日期选择器（laydate）</td>
+                                    <td colspan="3"><input class="text-input medium-input Wdate" type="text" id="laydate001"></td>
+                                </tr>
                                 </tbody>
 
                                 <tfoot>
@@ -170,6 +174,43 @@
                     <input class="button" type="button" onclick="$.BKD.notification('我是标题02', '我是内容02', null, 'tag01', null)" value="指定tag"/>
                     <input class="button" type="button" onclick="$.BKD.notification('我是标题03', '我是内容03', null, null, 5)" value="5秒关闭"/>
                     <input class="button" type="button" onclick="$.BKD.notification('我是标题04', '我是内容04', 'http://www.baidu.com/img/bd_logo1.png', null, null)" value="指定图标"/>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-box-header">
+                    <h3>Chrome、Firefox桌面声音通知</h3>
+                </div><!-- End .content-box-header -->
+
+                <div class="content-box-content">
+                    <input class="button" type="button" id="showvoice" value="播放提示音" />
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-box-header">
+                    <h3>点击查看大图</h3>
+                </div><!-- End .content-box-header -->
+
+                <div class="content-box-content">
+                    <div class="clearfix">
+                        <ul class="shortcut-buttons-set">
+                            <li><a class="shortcut-button" href="#"><span class="img-box">
+                                <img src="<?php echo HOME_DOMAIN ?>images/admin/login-bg-dh.jpg" width="60px"><br>
+                                查看大图1
+                            </span></a></li>
+
+                            <li><a class="shortcut-button" href="#"><span class="img-box">
+                                <img src="<?php echo HOME_DOMAIN ?>images/admin/login-bg-dh.jpg" width="60px"><br>
+                                查看大图2
+                            </span></a></li>
+
+                            <li><a class="shortcut-button" href="#"><span class="img-box">
+                                <img src="<?php echo HOME_DOMAIN ?>images/admin/login-bg-dh.jpg" width="60px"><br>
+                                查看大图3
+                            </span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -453,11 +494,36 @@
 <script type="text/javascript">
 <!--
 $(document).ready(function(){
+    // 绑定日期插件
+    laydate.render({
+        elem  : '#start_time_001',
+        type  : 'datetime',
+    });
+    laydate.render({
+        elem  : '#start_time_002',
+        type  : 'datetime',
+        theme : 'grid'
+    });
+    laydate.render({
+        elem  : '#laydate001',
+        type  : 'datetime',
+        range : true,
+        theme : 'molv'
+    });
+
+    //弹出图片相册
+    layer.photos({
+        photos: '.img-box'
+        ,anim: 1 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    });
+
     $.BKD.cloesNotice();
     
     KindEditor.ready(function(K) {
         var editor = K.create('#editor');
     });
+
+    $.BKD.triggeralarm('showvoice');
 })
 
 -->
