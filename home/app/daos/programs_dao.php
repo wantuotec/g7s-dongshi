@@ -13,16 +13,16 @@ class Programs_dao extends CI_Dao
     protected $_db_write = array('cluster' => 1, 'mode' => 'write');
     protected $_db_read  = array('cluster' => 1, 'mode' => 'read');
 
-    protected $_table    = '`programs`';
+    protected $_table    = 'sys_programs';
     
     protected $_fields   = '`id`, `systemId`, `sysGroupId`, `progName`, `funcName`, `createTime`, `udateTime`, `sort`, `is_display`, `is_deleted`';
 
     // 数据表定义
-    private $__table_programs  = 'programs';
+//    private $__table_programs  = 'sys_programs';
     
     //查询字段定义
-    private $__fields_names    = '`id`,`systemId`,`sysGroupId`,`funcName`,`progName`,`sort`,`is_display`';
-    private $__systemId_sysgGr = '`systemId`,`sysGroupId`';
+//    private $__fields_names    = '`id`,`systemId`,`sysGroupId`,`funcName`,`progName`,`sort`,`is_display`';
+//    private $__systemId_sysgGr = '`systemId`,`sysGroupId`';
     
     protected $_params;
     protected $_error;
@@ -36,7 +36,7 @@ class Programs_dao extends CI_Dao
     function get_all()
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT `id`,`systemId`,`sysGroupId`,`funcName`,`progName`,`sort`,`is_display` FROM `programs` WHERE is_deleted=0 ORDER BY `sort` ASC,`systemId` ASC,`sysGroupId` ASC");
+        $query = $this->rwdb->query("SELECT `id`,`systemId`,`sysGroupId`,`funcName`,`progName`,`sort`,`is_display` FROM `sys_programs` WHERE is_deleted=0 ORDER BY `sort` ASC,`systemId` ASC,`sysGroupId` ASC");
         return $query->result_array('funcName');
     }
 
@@ -44,7 +44,7 @@ class Programs_dao extends CI_Dao
     function get_all_by_system_id($id)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT `sysGroupId`,`progName`,`sort`,`is_display` FROM `programs` WHERE is_deleted=0 AND `systemId` = ?",array('system'=>$id));
+        $query = $this->rwdb->query("SELECT `sysGroupId`,`progName`,`sort`,`is_display` FROM `sys_programs` WHERE is_deleted=0 AND `systemId` = ?",array('system'=>$id));
         return $query->result_array('sysGroupId');
     }
 
@@ -59,7 +59,7 @@ class Programs_dao extends CI_Dao
     public function get_program_by_name($name)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `programs` WHERE `progName` = '{$name}'");
+        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `sys_programs` WHERE `progName` = '{$name}'");
         return $query->row_array();
     }
 
@@ -74,7 +74,7 @@ class Programs_dao extends CI_Dao
     public function get_programs_by_system_id($id, $order_by = 'sort asc, id asc')
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `programs` WHERE `systemId` = '{$id}' ORDER BY {$order_by}");
+        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `sys_programs` WHERE `systemId` = '{$id}' ORDER BY {$order_by}");
         return $query->result_array('sysGroupId');
     }
 
@@ -89,7 +89,7 @@ class Programs_dao extends CI_Dao
     public function get_programs_by_group_id($id, $order_by = 'sort asc, id asc')
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `programs` WHERE is_deleted=0 AND `systemId` > 0 AND `sysGroupId` = '{$id}' ORDER BY {$order_by}");
+        $query = $this->rwdb->query("SELECT `systemId`, `sysGroupId`, `progName`, `sort`,`is_display` FROM `sys_programs` WHERE is_deleted=0 AND `systemId` > 0 AND `sysGroupId` = '{$id}' ORDER BY {$order_by}");
         return $query->result_array('systemId');
     }
 
@@ -226,7 +226,7 @@ class Programs_dao extends CI_Dao
 
         $this->load->rwdb($this->_db_write);
 
-        if ($this->rwdb->insert('programs', $params)) {
+        if ($this->rwdb->insert('sys_programs', $params)) {
             return true;
         } else {
             return false;
@@ -244,7 +244,7 @@ class Programs_dao extends CI_Dao
     {        
         $this->load->rwdb($this->_db_read);
 
-        $result = $this->rwdb->query('select max(`sysGroupId`) as `sysGroupId` from `programs`');
+        $result = $this->rwdb->query('select max(`sysGroupId`) as `sysGroupId` from `sys_programs`');
         $result = $result->row_array();
 
         if (false === $result) {
@@ -308,7 +308,7 @@ class Programs_dao extends CI_Dao
         }
 
         $this->load->rwdb($this->_db_read);
-        $result = $this->rwdb->query('select `progName` from `programs` where `progName` = ? and `sysGroupId` = ? group by `sysGroupId`', array($progName, $sysGroupId));
+        $result = $this->rwdb->query('select `progName` from `sys_programs` where `progName` = ? and `sysGroupId` = ? group by `sysGroupId`', array($progName, $sysGroupId));
         $result = $result->row_array();
 
         if (false === $result) {
@@ -336,7 +336,7 @@ class Programs_dao extends CI_Dao
         }
 
         $this->load->rwdb($this->_db_read);
-        $result     = $this->rwdb->query("select max(`systemId`) as `systemId` from `programs` where `sysGroupId` = ? group by `sysGroupId` ", array($sysGroupId));
+        $result     = $this->rwdb->query("select max(`systemId`) as `systemId` from `sys_programs` where `sysGroupId` = ? group by `sysGroupId` ", array($sysGroupId));
         $result     = $result->row_array();
         
         if (false === $result) {

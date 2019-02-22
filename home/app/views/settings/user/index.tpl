@@ -100,9 +100,9 @@
                                    <td><?php echo $group[$item['groupId']]['groupName'] ?></td>
                                    <td><?php echo $search_option['status'][$item['status']] ?></td>
                                    <td>
-                                   <a href="<?php echo HOME_DOMAIN ?>user/editUser/?id=<?php echo $item['id'] ?>"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/pencil.png" alt="编辑"/>编辑</a>&nbsp;
-                                   <a onclick="$.BKD.open('iframe', '<?php echo HOME_DOMAIN ?>user/editPass/?id=<?php echo $item['id'] ?>&nobar=1', '500px', '400px')" alt="修改密码" href="#"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/pencil.png" alt="修改密码"/>修改密码</a>&nbsp;
-                                   <a href="<?php echo HOME_DOMAIN ?>user/priv/?id=<?php echo $item['id'] ?>"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/priv.png" alt="编辑"/>权限</a>
+                                   <a href="<?php echo HOME_DOMAIN ?>user/editUser/?id=<?php echo $item['id'] ?>"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/edit_2.png" alt="编辑"/>编辑</a>&nbsp;
+                                   <a onclick="$.BKD.open('iframe', '<?php echo HOME_DOMAIN ?>user/editPass/?id=<?php echo $item['id'] ?>&nobar=1', '500px', '400px')" alt="修改密码" href="#"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/password.png" alt="修改密码"/>修改密码</a>&nbsp;
+                                   <a href="<?php echo HOME_DOMAIN ?>user/priv/?id=<?php echo $item['id'] ?>"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/auth.png" alt="编辑"/>权限</a>
                                    </td>
 								</tr>
                                 <?php endforeach; ?>

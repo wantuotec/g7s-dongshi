@@ -12,7 +12,7 @@ class Auth_groups_dao extends CI_Dao
     protected $_db_read  = array('cluster' => 1, 'mode' => 'read');
 
     // 数据表定义
-    protected $_table    = 'groups';
+    protected $_table    = 'sys_groups';
 
     // 字段定义
     protected $_fields   = '`id`, `groupName`, `status`, `createTime`, `udateTime`';
@@ -29,7 +29,7 @@ class Auth_groups_dao extends CI_Dao
     function get_all_auth_groups()
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT id,groupName FROM `groups`");
+        $query = $this->rwdb->query("SELECT id,groupName FROM `sys_groups`");
         return $query->result_array('id');
     }
 
@@ -43,7 +43,7 @@ class Auth_groups_dao extends CI_Dao
     function exist_auth_id($id)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT COUNT(*) AS count FROM `groups` WHERE `id` = ?",
+        $query = $this->rwdb->query("SELECT COUNT(*) AS count FROM `sys_groups` WHERE `id` = ?",
             array($id));
         return $query->row()->count;
     }
@@ -54,7 +54,7 @@ class Auth_groups_dao extends CI_Dao
         $this->load->rwdb($this->_db_read);
         $this->_params = $params;
 
-        $sql = 'SELECT `id`,`groupName`,`status` FROM groups' . $this->_where();
+        $sql = 'SELECT `id`,`groupName`,`status` FROM sys_groups' . $this->_where();
 
         if (!empty($size)) {
             $sql .= " LIMIT $size";
@@ -70,7 +70,7 @@ class Auth_groups_dao extends CI_Dao
     function count()
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query('SELECT COUNT(*) AS count FROM groups' . $this->
+        $query = $this->rwdb->query('SELECT COUNT(*) AS count FROM sys_groups' . $this->
             _where());
         $counts = $query->row_array();
         return $counts['count'];
@@ -81,7 +81,7 @@ class Auth_groups_dao extends CI_Dao
     {
         $this->load->rwdb($this->_db_write);
         $data['createTime'] = date("Y-m-d H:i:s");
-        if ($this->rwdb->insert('groups', $data)) {
+        if ($this->rwdb->insert('sys_groups', $data)) {
             return true;
         } else {
             $this->_error = '插入角色失败';
@@ -93,7 +93,7 @@ class Auth_groups_dao extends CI_Dao
     function update_role($data,$id)
     {
         $this->load->rwdb($this->_db_write);
-        if($this->rwdb->update('groups',$data,array('id'=>$id))){
+        if($this->rwdb->update('sys_groups',$data,array('id'=>$id))){
             return true;
         }else{
             $this->_error = '修改角色 失败';
@@ -105,7 +105,7 @@ class Auth_groups_dao extends CI_Dao
     function get_by_role_id($id)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query('SELECT `id`,`groupName`,`status` FROM `groups` WHERE `id` = ?', array($id));
+        $query = $this->rwdb->query('SELECT `id`,`groupName`,`status` FROM `sys_groups` WHERE `id` = ?', array($id));
         return $query->row_array();
     }
 

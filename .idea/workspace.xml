@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd5b7879-088c-4d23-a578-1059cc3edcc7" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/home/app/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/config/development/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/config/development/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/public/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/daos/auth_groups_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/auth_groups_dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/daos/configure_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/configure_dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/daos/programs_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/programs_dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/daos/sys_auths_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/sys_auths_dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/daos/user_dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/daos/user_dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/configure/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/configure/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/settings/programs/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/settings/programs/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/settings/role/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/settings/role/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/settings/user/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/settings/user/index.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,29 +22,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/app/views/settings/user/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="105" selection-start-line="5" selection-start-column="105" selection-end-line="5" selection-end-column="105" />
+            <state relative-caret-position="315">
+              <caret line="102" column="149" lean-forward="true" selection-start-line="102" selection-start-column="149" selection-end-line="102" selection-end-column="181" />
+              <folding>
+                <element signature="e#3763#3769#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/app/views/settings/role/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="441">
+              <caret line="87" column="121" selection-start-line="87" selection-start-column="121" selection-end-line="87" selection-end-column="201" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/app/config/constants.php">
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home/app/views/configure/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="399">
+              <caret line="64" column="204" selection-start-line="64" selection-start-column="204" selection-end-line="64" selection-end-column="204" />
             </state>
           </provider>
         </entry>
@@ -46,9 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UPLOAD_IMG_DOMAIN</find>
-      <find>public/images</find>
-      <find>main-nav</find>
       <find>User_model</find>
       <find>show_error</find>
       <find>table</find>
@@ -76,6 +83,9 @@
       <find>get_template_by_configure_name</find>
       <find>memcache</find>
       <find>__is_verify</find>
+      <find>$__systemId_sysgGr</find>
+      <find>play_show</find>
+      <find>展开二级菜单</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -115,11 +125,8 @@
         <option value="$PROJECT_DIR$/home/public/index.php" />
         <option value="$PROJECT_DIR$/home/app/controllers/upload.php" />
         <option value="$PROJECT_DIR$/home/app/views/base/siderbar.tpl" />
-        <option value="$PROJECT_DIR$/home/app/views/settings/role/index.tpl" />
-        <option value="$PROJECT_DIR$/home/app/views/settings/user/index.tpl" />
         <option value="$PROJECT_DIR$/system/core/Common.php" />
         <option value="$PROJECT_DIR$/home/app/controllers/user.php" />
-        <option value="$PROJECT_DIR$/home/app/views/settings/programs/index.tpl" />
         <option value="$PROJECT_DIR$/home/app/config/development/rwdb.php" />
         <option value="$PROJECT_DIR$/home/public/js/admin/base.js" />
         <option value="$PROJECT_DIR$/home/app/views/base/login_head.tpl" />
@@ -129,14 +136,21 @@
         <option value="$PROJECT_DIR$/home/app/views/base/template.tpl" />
         <option value="$PROJECT_DIR$/home/app/controllers/role.php" />
         <option value="$PROJECT_DIR$/home/app/models/auth_model.php" />
-        <option value="$PROJECT_DIR$/home/app/daos/sys_auths_dao.php" />
         <option value="$PROJECT_DIR$/home/app/controllers/configure.php" />
-        <option value="$PROJECT_DIR$/home/app/daos/configure_dao.php" />
         <option value="$PROJECT_DIR$/home/app/models/configure_model.php" />
         <option value="$PROJECT_DIR$/home/app/controllers/template.php" />
         <option value="$PROJECT_DIR$/home/app/config/constants.php" />
-        <option value="$PROJECT_DIR$/home/app/config/development/constants.php" />
         <option value="$PROJECT_DIR$/home/public/js/base.js" />
+        <option value="$PROJECT_DIR$/home/app/config/development/constants.php" />
+        <option value="$PROJECT_DIR$/home/app/daos/user_dao.php" />
+        <option value="$PROJECT_DIR$/home/app/daos/auth_groups_dao.php" />
+        <option value="$PROJECT_DIR$/home/app/daos/sys_auths_dao.php" />
+        <option value="$PROJECT_DIR$/home/app/daos/programs_dao.php" />
+        <option value="$PROJECT_DIR$/home/app/daos/configure_dao.php" />
+        <option value="$PROJECT_DIR$/home/app/views/settings/programs/index.tpl" />
+        <option value="$PROJECT_DIR$/home/app/views/settings/user/index.tpl" />
+        <option value="$PROJECT_DIR$/home/app/views/settings/role/index.tpl" />
+        <option value="$PROJECT_DIR$/home/app/views/configure/index.tpl" />
       </list>
     </option>
   </component>
@@ -160,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +190,28 @@
               <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dongshi" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dongshi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dongshi" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="configure" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,29 +247,29 @@
       <workItem from="1550484335421" duration="72000" />
       <workItem from="1550542413284" duration="21234000" />
       <workItem from="1550628681382" duration="6320000" />
-      <workItem from="1550715195029" duration="23638000" />
+      <workItem from="1550715195029" duration="25059000" />
+      <workItem from="1550802275222" duration="5637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86811000" />
+    <option name="totallyTimeSpent" value="93869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -249,6 +278,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,16 +288,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/app/views/base/login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/settings/user/edit_branch.tpl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -306,13 +326,6 @@
     <entry file="file://$PROJECT_DIR$/home/app/views/base/info.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/settings/user/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="103" column="54" lean-forward="true" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/base/login_head.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -341,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/public/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="247" column="1" lean-forward="true" selection-start-line="247" selection-start-column="1" selection-end-line="247" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/base/siderbar.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -360,28 +366,9 @@
         <state relative-caret-position="-8690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/controllers/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/settings/programs/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="83" column="138" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/controllers/about.php" />
     <entry file="file://$PROJECT_DIR$/home/public/js/layer/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/base/head.tpl">
       <provider selected="true" editor-type-id="text-editor">
@@ -397,13 +384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/public/js/guestbook_input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/home/public/js/guestbook_input.js" />
     <entry file="file://$PROJECT_DIR$/home/public/js/member/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575" />
@@ -413,9 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="1" column="1735" lean-forward="true" selection-start-line="1" selection-start-column="1735" selection-end-line="1" selection-end-column="1735" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,16 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/models/auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -457,58 +425,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/daos/base/s_captcha_dao.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/daos/user_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1092">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/daos/sys_auths_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/daos/base/s_content_manage_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/daos/base/s_configure_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/daos/auth_groups_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/system/daos/base/s_captcha_dao.php" />
+    <entry file="file://$PROJECT_DIR$/system/daos/base/s_content_manage_dao.php" />
+    <entry file="file://$PROJECT_DIR$/system/daos/base/s_configure_dao.php" />
     <entry file="file://$PROJECT_DIR$/home/app/models/user_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/daos/programs_dao.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/daos/configure_dao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -549,9 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="513" column="12" selection-start-line="513" selection-start-column="12" selection-end-line="513" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,21 +492,115 @@
     <entry file="file://$PROJECT_DIR$/home/app/config/constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/public/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="105" selection-start-line="5" selection-start-column="105" selection-end-line="5" selection-end-column="105" />
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/config/development/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/daos/auth_groups_dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/daos/user_dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/daos/sys_auths_dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/daos/programs_dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="338" column="97" selection-start-line="338" selection-start-column="97" selection-end-line="338" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/daos/configure_dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/models/auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/settings/programs/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="e#4#10#0" expanded="true" />
+            <element signature="e#11#17#0" expanded="true" />
+            <element signature="e#18#24#0" expanded="true" />
+            <element signature="e#25#31#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#39#45#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/public/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="408" column="28" selection-start-line="408" selection-start-column="28" selection-end-line="408" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/settings/user/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="102" column="149" lean-forward="true" selection-start-line="102" selection-start-column="149" selection-end-line="102" selection-end-column="181" />
+          <folding>
+            <element signature="e#3763#3769#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/settings/role/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="87" column="121" selection-start-line="87" selection-start-column="121" selection-end-line="87" selection-end-column="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/configure/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="64" column="204" selection-start-line="64" selection-start-column="204" selection-end-line="64" selection-end-column="204" />
         </state>
       </provider>
     </entry>

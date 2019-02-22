@@ -14,6 +14,8 @@ class Sys_auths_dao extends CI_Dao
     protected $_params;
     protected $_error;
 
+    protected $_table    = 'sys_auth';
+
     function __construct()
     {
         parent::__construct();
@@ -24,9 +26,9 @@ class Sys_auths_dao extends CI_Dao
     {
         $this->load->rwdb($this->_db_read);
         $sql = " SELECT `sa`.`id`,`sa`.`systemId`,`sa`.`sysGroupId`,`sa`.`access`,`sa`.`edit`,`sa`.`addnew`,`sa`.`del`,`sa`.`check`,`sa`.`managerCheck`,`p`.`progName`,`p`.`funcName`,`p`.`is_display` ";
-        $sql .= " FROM `auth` AS `sa`";
-        $sql .= " INNER JOIN `programs` AS `p` ON `sa`.`systemId` = `p`.`systemId`";
-        $sql .= " INNER JOIN `groups` AS `ag` ON `sa`.`groupId` = `ag`.`id`";
+        $sql .= " FROM `sys_auth` AS `sa`";
+        $sql .= " INNER JOIN `sys_programs` AS `p` ON `sa`.`systemId` = `p`.`systemId`";
+        $sql .= " INNER JOIN `sys_groups` AS `ag` ON `sa`.`groupId` = `ag`.`id`";
         $sql .= " WHERE `p`.`is_deleted`=0 AND `sa`.`groupId` = ? AND `sa`.`sysGroupId` = `p`.`sysGroupId` AND `ag`.`status` = 'allow'";
         $sql .= " ORDER BY `p`.`sort` ASC,`sa`.`sysGroupId`,`sa`.`systemId` ASC";
         $query = $this->rwdb->query($sql, array($id));
@@ -37,7 +39,7 @@ class Sys_auths_dao extends CI_Dao
     function delete_by_group_id($id)
     {
         $this->load->rwdb($this->_db_write);
-        return $this->rwdb->delete('auth', array('groupId' => $id));
+        return $this->rwdb->delete('sys_auth', array('groupId' => $id));
     }
 
     /* 批量插入 */
@@ -48,7 +50,7 @@ class Sys_auths_dao extends CI_Dao
         }
         $binds = array();
         $this->load->rwdb($this->_db_write);
-        $sql = "INSERT INTO auth (`groupId`,`systemId`,`sysGroupId`,`access`,`edit`,`addnew`,`del`,`check`,`managerCheck`,`createTime`) VALUES";
+        $sql = "INSERT INTO sys_auth (`groupId`,`systemId`,`sysGroupId`,`access`,`edit`,`addnew`,`del`,`check`,`managerCheck`,`createTime`) VALUES";
         foreach ($data as $item) {
             $sql .= "(?,?,?,?,?,?,?,?,?,?),";
             $binds[] = $item['groupId'];

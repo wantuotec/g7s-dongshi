@@ -30,13 +30,15 @@ function del(obj) {
 function play_show(obj, group_id) {
     var icon_url = obj.find("img").attr("src");
 
-    if (icon_url == "<?php echo HOME_DOMAIN ?>images/admin/icons/16/play_show.png") {
-       obj.find("img").attr("alt", "收缩二级菜单");
-        obj.find("img").attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/play.png");
+    if (icon_url == "<?php echo HOME_DOMAIN ?>images/admin/icons/16/down.png") {
+        obj.find("img").attr("alt", "收缩二级菜单");
+        obj.find("img").attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/advance.png");
+        obj.find("span").html('展开二级菜单');
         $(".sub_"+group_id).hide();
     } else {
-       obj.find("img").attr("alt", "展开二级菜单");
-        obj.find("img").attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/play_show.png");
+        obj.find("img").attr("alt", "展开二级菜单");
+        obj.find("img").attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/down.png");
+        obj.find("span").html('收缩二级菜单');
         $(".sub_"+group_id).show();
     }
 }
@@ -49,10 +51,10 @@ function update_display(obj, group_id) {
 
     if (is_display.val() == 1) {
        is_display.val('0');
-       obj.html('<img alt="隐藏" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross_circle.png">隐藏');
+       obj.html('<img alt="隐藏" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/view_no.png">隐藏');
     } else {
        is_display.val('1');
-        obj.html('<img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/tick_circle.png">显示');
+        obj.html('<img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/view_yes.png">显示');
     }
 }
 
@@ -75,13 +77,13 @@ function add_menu()
         htmls += '</td>';
         htmls += '<td><input type="text" name="menu['+group_id+'][funcName]" class="input" value="" /></td>';
         htmls += '<td><input type="text" name="menu['+group_id+'][sort]" class="input" style="width:30px;" maxlength="" value="" /></td>';
-        htmls += '<td><a href="javascript:;" onclick="update_display($(this), '+group_id+')" ><img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/tick_circle.png">显示</a>';
+        htmls += '<td><a href="javascript:;" onclick="update_display($(this), '+group_id+')" ><img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/view_yes.png">显示</a>';
             htmls += '<input type="hidden" name="menu['+group_id+'][is_display]" value="1" />';
         htmls += '</td>';
         htmls += '<td>';
-            htmls += '<a href="javascript:;" onclick="add_column($(this), '+group_id+')"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/add.png" alt="Add"/>添加二级菜单</a>';
-            htmls += '&nbsp;<a style="cursor:pointer;" href="javascript:;" onclick="play_show($(this), '+group_id+');"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/play.png" alt="展开菜单"/>展开二级菜单</a>';
-            htmls += '&nbsp;<a href="javascript:;" onclick="del($(this))"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a>';
+            htmls += '<a href="javascript:;" onclick="add_column($(this), '+group_id+')"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/add_2.png" alt="Add"/><span>添加二级菜单</span></a>';
+            htmls += '&nbsp;<a style="cursor:pointer;" href="javascript:;" onclick="play_show($(this), '+group_id+');"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/advance.png" alt="展开菜单"/><span>展开二级菜单</span></a>';
+            htmls += '&nbsp;<a href="javascript:;" onclick="del($(this))"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/cancel.png" alt="删除" />删除</a>';
         htmls += '</td>';
     htmls += '</tr>';
 
@@ -102,11 +104,11 @@ function add_column(obj, group_id)
         htmls += '<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="menu['+group_id+'][sub]['+num+'][progName]" class="input" value="" /></td>';
         htmls += '<td><input type="text" name="menu['+group_id+'][sub]['+num+'][funcName]" class="input" value="" /></td>';
         htmls += '<td><input type="text" name="menu['+group_id+'][sub]['+num+'][sort]" class="input" style="width:30px;" maxlength="" value="" /></td>';
-        htmls += '<td><a href="javascript:;" onclick="update_display($(this), '+group_id+')" ><img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/tick_circle.png">显示</a>';
+        htmls += '<td><a href="javascript:;" onclick="update_display($(this), '+group_id+')" ><img alt="显示" src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/view_yes.png">显示</a>';
             htmls += '<input type="hidden" name="menu['+group_id+'][sub]['+num+'][is_display]" value="1" />';
         htmls += '</td>';
         htmls += '<td>';
-            htmls += '<a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a>';
+            htmls += '<a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/cancel.png" alt="删除" />删除</a>';
             htmls += '<input type="hidden" name="menu['+group_id+'][sub]['+num+'][systemId]" value="1" />';
             htmls += '<input type="hidden" name="menu['+group_id+'][sub]['+num+'][sysGroupId]" value="'+group_id+'" />';
         htmls += '</td>';
@@ -120,7 +122,7 @@ function add_column(obj, group_id)
     }
 
     obj.parent().find("img").eq(1).attr("alt", "展开二级菜单");
-    obj.parent().find("img").eq(1).attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/play_show.png");
+    obj.parent().find("img").eq(1).attr("src", "<?php echo HOME_DOMAIN ?>images/admin/icons/16/advance.png");
 }
 
 /**
@@ -198,9 +200,9 @@ function save_all()
                         <td>
                            <a href="javascript:;" onclick="update_display($(this), <?php echo $item['sysGroupId']?>)" >
                                <?php if($item['is_display'] == 1){?>
-                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/tick_circle.png">显示
+                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/view_yes.png">显示
                                 <?php }else{ ?>
-                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/cross_circle.png">隐藏
+                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/view_no.png">隐藏
                                 <?php } ?>
                             </a>
                             <input type="hidden" name="menu[<?php echo $item['sysGroupId']; ?>][is_display]" value="<?php echo $item['is_display']; ?>" />
@@ -208,12 +210,12 @@ function save_all()
 
                         <td>
                             <input type="hidden" value="<?php echo HOME_DOMAIN.'programs/edit_program/?id='.$item['id'] ?>">
-                            <a href="javascript:;" onclick="add_column($(this), <?php echo $item['sysGroupId']; ?>)"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/add.png" alt="Add"/>添加二级菜单</a>
+                            <a href="javascript:;" onclick="add_column($(this), <?php echo $item['sysGroupId']; ?>)"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/add_2.png" alt="Add"/>添加二级菜单</a>
 
                             <a style="cursor:pointer;" href="javascript:;" onclick="play_show($(this), <?php echo $item['sysGroupId']; ?>);">
-                                <img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/play.png" alt="展开菜单"/>展开二级菜单
+                                <img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/advance.png" alt="展开菜单"/><span>展开二级菜单</span>
                             </a>
-                            <a href="javascript:;" onclick="del($(this));"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a></td>
+                            <a href="javascript:;" onclick="del($(this));"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/cancel.png" alt="删除" />删除</a></td>
                         </td>
                     </tr>
 
@@ -227,9 +229,9 @@ function save_all()
                         <td>
                            <a href="javascript:;" onclick="update_display($(this), <?php echo $item['sysGroupId']?>)" >
                                <?php if($val['is_display'] == 1){?>
-                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/tick_circle.png">显示
+                                    <img alt="显示" src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/view_yes.png">显示
                                 <?php }else{ ?>
-                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/cross_circle.png">隐藏
+                                    <img alt="隐藏" src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/view_no.png">隐藏
                                 <?php } ?>
                             </a>
                             <input type="hidden" name="menu[<?php echo $val['sysGroupId']; ?>][sub][<?php echo $key; ?>][is_display]" value="<?php echo $val['is_display']; ?>" />
@@ -237,7 +239,7 @@ function save_all()
 
                         <td>
                            <input type="hidden" name="menu[<?php echo $val['sysGroupId']; ?>][sub][<?php echo $key; ?>][id]" value="<?php echo $val['id']; ?>" />
-                            <a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/cross.png" alt="删除" />删除</a>
+                            <a href="javascript:;" onclick="$(this).parent().parent().remove()"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/cancel.png" alt="删除" />删除</a>
                         </td>
                    </tr>
 

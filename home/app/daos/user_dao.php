@@ -13,6 +13,8 @@ class User_dao extends CI_Dao
     private   $_db_read  = array('cluster' => 1, 'mode' => 'read');
     protected $_params;
 
+    protected $_table    = 'sys_user';
+
     function __construct()
     {
         parent::__construct();
@@ -29,7 +31,7 @@ class User_dao extends CI_Dao
         $this->load->rwdb($this->_db_read);
         $this->rwdb
              ->select(" `id`,`groupId`,`user`,`userName`,`status`,`pass`")
-             ->from('user')
+             ->from('sys_user')
              ->where($where);
 
         if( $mode === 'row' )
@@ -44,7 +46,7 @@ class User_dao extends CI_Dao
         $this->load->rwdb($this->_db_read);
         $this->_params = $params;
 
-        $sql = "SELECT `id`,`groupId`,`user`,`userName`,`status` FROM `user`" .
+        $sql = "SELECT `id`,`groupId`,`user`,`userName`,`status` FROM `sys_user`" .
             $this->_where();
 
         if (!empty($size)) {
@@ -60,7 +62,7 @@ class User_dao extends CI_Dao
     /* 获取所有用户 */
     function get_all_username()
     {
-        $sql = "select id,user,userName from user ";
+        $sql = "select id,user,userName from sys_user ";
         $this->load->rwdb($this->_db_read);
         $query = $this->rwdb->query($sql);
         return $query->result_array();
@@ -70,7 +72,7 @@ class User_dao extends CI_Dao
     function count()
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `user`" . $this->
+        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `sys_user`" . $this->
             _where());
         $counts = $query->row_array();
         return $counts['count'];
@@ -81,7 +83,7 @@ class User_dao extends CI_Dao
     function exist_user_id($user_id)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `user` WHERE `id` = ?",
+        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `sys_user` WHERE `id` = ?",
             array($user_id));
         return $query->row()->count;
     }
@@ -90,7 +92,7 @@ class User_dao extends CI_Dao
     function exist_user_by_name($user_name)
     {
         $this->load->rwdb($this->_db_read);
-        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `user` WHERE `user` = ?",
+        $query = $this->rwdb->query("SELECT COUNT(*) AS `count` FROM `sys_user` WHERE `user` = ?",
             array($user_name));
         return $query->row()->count;
     }
@@ -100,7 +102,7 @@ class User_dao extends CI_Dao
     {
         $this->load->rwdb($this->_db_write);
         $data['createTime'] = date("Y-m-d H:i:s");
-        if($this->rwdb->insert('user',$data)){
+        if($this->rwdb->insert('sys_user',$data)){
             return true;
         }else{
             $this->_error = '插入用户失败';
@@ -112,7 +114,7 @@ class User_dao extends CI_Dao
     function update_user($data,$id)
     {
         $this->load->rwdb($this->_db_write);
-        if($this->rwdb->update('user',$data,array('id'=>$id))){
+        if($this->rwdb->update('sys_user',$data,array('id'=>$id))){
             return true;
         }else{
             $this->_error = '修改用户失败';
@@ -126,7 +128,7 @@ class User_dao extends CI_Dao
         $this->load->rwdb($this->_db_write);
         $this->rwdb->where_in('id',$ids);
 
-        if($this->rwdb->update('user',$data)){
+        if($this->rwdb->update('sys_user',$data)){
             return true;
         }else{
             $this->_error = '修改用户失败';
@@ -144,7 +146,7 @@ class User_dao extends CI_Dao
     function get_by_user_id($id)
     {
     	$this->load->rwdb($this->_db_read);
-    	$query = $this->rwdb->query('SELECT `id`,`groupId`,`user`, `phone_number`,`pass`,`userName`,`email`,`status` FROM `user` WHERE `id` = ?',array($id));
+    	$query = $this->rwdb->query('SELECT `id`,`groupId`,`user`, `phone_number`,`pass`,`userName`,`email`,`status` FROM `sys_user` WHERE `id` = ?',array($id));
     	return $query->row_array();
     }
     
@@ -152,7 +154,7 @@ class User_dao extends CI_Dao
     function get_by_group_id($id)
     {
     	$this->load->rwdb($this->_db_read);
-    	$query = $this->rwdb->query("SELECT `id`,`groupId`,`user`,`userName`,`email`,`status` FROM `user` WHERE `status` = 'allow' AND `groupId` = ?",array($id));
+    	$query = $this->rwdb->query("SELECT `id`,`groupId`,`user`,`userName`,`email`,`status` FROM `sys_user` WHERE `status` = 'allow' AND `groupId` = ?",array($id));
     	return $query->result_array();
     }
 
@@ -162,7 +164,7 @@ class User_dao extends CI_Dao
     	$this->load->rwdb($this->_db_read);
         
         $this->rwdb->select('groupId,COUNT(*) AS count');
-        $this->rwdb->from('user');
+        $this->rwdb->from('sys_user');
         $this->rwdb->where_in('groupId', $id_list);
         $this->rwdb->where('status', 'allow');
     	$this->rwdb->group_by('groupId');
@@ -177,7 +179,7 @@ class User_dao extends CI_Dao
     	$this->load->rwdb($this->_db_read);
         
         $this->rwdb->select('id,userName');
-        $this->rwdb->from('user');
+        $this->rwdb->from('sys_user');
         $this->rwdb->where_in('id', $ids);
         $query = $this->rwdb->get();
         
@@ -189,7 +191,7 @@ class User_dao extends CI_Dao
     {
     	$this->load->rwdb($this->_db_read);
         
-        $sql = "SELECT `id`,`groupId`,`user`,`userName`,`email` FROM `user` WHERE `status` = 'allow' AND `user` = ? AND `pass` = ? ";
+        $sql = "SELECT `id`,`groupId`,`user`,`userName`,`email` FROM `sys_user` WHERE `status` = 'allow' AND `user` = ? AND `pass` = ? ";
         $query = $this->rwdb->query($sql, array($user,$pass));
         return $query->row_array();
     }
@@ -199,7 +201,7 @@ class User_dao extends CI_Dao
     {
         $this->load->rwdb($this->_db_read);
         
-        $sql = "SELECT `id`,`groupId`,`user`, `phone_number`, `userName`,`email` FROM `user` WHERE `status` = 'allow' AND `phone_number` = ?";
+        $sql = "SELECT `id`,`groupId`,`user`, `phone_number`, `userName`,`email` FROM `sys_user` WHERE `status` = 'allow' AND `phone_number` = ?";
         $query = $this->rwdb->query($sql, array($phone_number));
         return $query->row_array();
     }

@@ -62,8 +62,8 @@
                             <td><?php echo $val['type_title']; ?></td>
                             <td><?php echo $val['description']; ?></td>
                             <td>
-                                <a href="<?php echo HOME_DOMAIN; ?>configure/detail?configure_id=<?php echo $val['configure_id']; ?>">查看</a>
-                                &nbsp;&nbsp;<a href="<?php echo HOME_DOMAIN; ?>configure/edit?configure_id=<?php echo $val['configure_id']; ?>">编辑</a>
+                                <a href="<?php echo HOME_DOMAIN; ?>configure/detail?configure_id=<?php echo $val['configure_id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/view_yes.png" alt="编辑"/>查看</a>
+                                &nbsp;&nbsp;<a href="<?php echo HOME_DOMAIN; ?>configure/edit?configure_id=<?php echo $val['configure_id']; ?>"><img src="<?php echo HOME_DOMAIN; ?>images/admin/icons/16/edit_2.png" alt="编辑"/>编辑</a>
                             </td>
                         </tr>
                     <?php } ?>

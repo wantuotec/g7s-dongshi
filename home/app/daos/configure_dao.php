@@ -13,7 +13,7 @@ class Configure_dao extends CI_Dao
     protected    $_db_write = array('cluster' => 1, 'mode' => 'write');
     protected    $_db_read  = array('cluster' => 1, 'mode' => 'read');
 
-    protected    $_table    = 'configure';
+    protected    $_table    = 'sys_configure';
 
     protected    $_fields   = '`configure_id`, `configure_name`, `configure_value`, `description`, `type`';
 }
