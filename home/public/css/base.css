@@ -8,7 +8,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 /* ?????????? */
 html {
-    background: url("../../images/admin/bg-radial-gradient.gif") repeat-y scroll left top #F0F0F0;
+    /*background: url("../../images/admin/bg-radial-gradient.gif") repeat-y scroll left top #F0F0F0;*/
+    background-color: #F0F0F0;
     font-size: 100%;
     height: 100%;
     margin-bottom: 1px;
@@ -175,7 +176,7 @@ a.remove-link:hover {
     border-radius: 4px 4px 4px 4px;
 }
 .content-box, .content-box-header, ul.content-box-tabs li a.current, .shortcut-button, .notification {
-    border-radius: 6px 6px 6px 6px;
+    /*border-radius: 6px 6px 6px 6px;*/
 }
 .content-box-header {
     border-bottom-left-radius: 0;
@@ -216,7 +217,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     left: 0;
     position: absolute;
     top: 0;
-    width: 215px;
+    width: 250px;
     min-height: 100%;
     height: auto;
     overflow: hidden;
@@ -352,8 +353,8 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
     font-weight: bold;
 }
 #main-content {
-    margin: 0 30px;
-    padding: 20px 0 0;
+    margin: 0 5px;
+    padding: 10px 0 0;
 }
 .column-left {
     float: left;
@@ -404,7 +405,7 @@ div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active {
 .content-box-header {
     /*background: url("../../images/admin/bg-content-box.gif") repeat-x scroll left top #E5E5E5;*/
     height: 40px;
-    margin-top: 1px;
+    /*margin-top: 1px;*/
     border-bottom: 1px solid #CCCCCC;
     background-color: #22262e;
     color: #FFF;

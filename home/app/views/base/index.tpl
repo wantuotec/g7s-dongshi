@@ -13,8 +13,8 @@
         setInterval(keepLogin, 600000);
     </script>
 </head>
-    <frameset id="frameset" name="main" cols="235px,*" frameborder="0" >
-        <frame id="siderbar" name="siderbar" src="<?php echo HOME_DOMAIN; ?>admin/siderbar" noresize="noresize" scrolling="auto"></frame>
+    <frameset id="frameset" name="main" cols="255px,*" frameborder="0" >
+        <frame id="siderbar" name="siderbar" src="<?php echo HOME_DOMAIN; ?>admin/siderbar" noresize="noresize" scrolling="no"></frame>
         <frame id="content" name="content" src="<?php echo HOME_DOMAIN; ?>admin/info" noresize="noresize" scrolling="auto"></frame>
      </frameset>
 </html>

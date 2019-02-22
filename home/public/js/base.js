@@ -133,7 +133,7 @@
                     $fold.show();
                     parent.document.getElementById('siderbar').scrolling="auto";
                     $('#sidebar-wrapper').show();
-                    $('#sidebar').width('225px');
+                    $('#sidebar').width('250px');
                     parent.document.getElementById(frameId).cols = defaultCols;
                     return false;
                 })
@@ -552,7 +552,7 @@
         /**
          * 弹出消息
          *
-         * @params  string  message 提示信息
+         * @params  string  message    提示信息
          *
          * @return  bool
          */

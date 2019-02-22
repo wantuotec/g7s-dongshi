@@ -58,7 +58,7 @@ if (!in_array($_SERVER['REQUEST_URI'], array('/auth', '/admin/siderbar','/admin/
 </script>
 
 <?php if(!in_array($_SERVER['REQUEST_URI'], array('/auth', '/admin/siderbar')) && $_GET['nobar'] !== '1') { ?>
-<table border="0" width="100%" class="content-box-header">
+<table border="0" width="100%" class="content-box-header" style="border-radius:0;margin: 0 5px;">
     <tr>
         <td width="50%">
             <h3>
@@ -73,10 +73,10 @@ if (!in_array($_SERVER['REQUEST_URI'], array('/auth', '/admin/siderbar','/admin/
             </h3>
         </td>
         <td width="50%">
-            <h3>
+            <h3 style="float: right;margin-right: 5px;">
             <!--<a href="<?php echo  HOME_DOMAIN; ?>" target="_blank" >查看前台</a>&nbsp;|&nbsp;-->
-            <a onclick="$.BKD.open('iframe', '<?php echo  HOME_DOMAIN ?>auth/reset_password?nobar=1', '400px', '340px')" href="#">修改密码</a>&nbsp;|&nbsp;
-            <a target="_parent" href="<?php echo  HOME_DOMAIN ?>auth/loginout" >登出</a>
+            <a onclick="$.BKD.open('iframe', '<?php echo  HOME_DOMAIN ?>auth/reset_password?nobar=1', '400px', '340px')" href="#"><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/editpwd.png" alt="修改密码"/>修改密码</a>&nbsp;|&nbsp;
+            <a target="_parent" href="<?php echo  HOME_DOMAIN ?>auth/loginout" ><img src="<?php echo HOME_DOMAIN ?>images/admin/icons/16/loginout.png" alt="登出"/>登出</a>
             </h3>
         </td>
     </tr>

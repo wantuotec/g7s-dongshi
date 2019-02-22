@@ -17,7 +17,7 @@
 
         <div id="profile-links">您 好！  <?php echo $userName ?><br/>
             <!--<a href="<?php echo HOME_DOMAIN; ?>" target="_blank" >查看前台</a> | -->
-            <a target="_parent" href="<?php echo HOME_DOMAIN ?>auth/loginout" >登出</a>
+            <!--<a target="_parent" href="<?php echo HOME_DOMAIN ?>auth/loginout" >登出</a>-->
         </div>
 
         <ul id="main-nav">  <!-- Accordion Menu -->
